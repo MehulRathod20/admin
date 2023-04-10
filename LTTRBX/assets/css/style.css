@@ -1,3 +1,19 @@
-h3{
- color: red; 
+*{
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  background-color: aliceblue; 
+}
+.card{
+  width:; 
+  height: auto;
+  margin: ;
+  border: none;
+  border-radius:11px;
+  padding: 30px 10px 10px 10px;
 }
