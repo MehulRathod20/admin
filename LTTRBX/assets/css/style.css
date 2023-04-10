@@ -1,3 +1,8 @@
+:root{
+  --lb-main-color:#1F3BB3;
+  --lb-white:#fff;
+
+}
 *{
   margin: 0;
   padding: 0;
@@ -7,7 +12,7 @@
   list-style: none;
 }
 body{
-  background-color: aliceblue; 
+  background-color:; 
 }
 .card{
   width:; 
@@ -16,4 +21,10 @@ body{
   border: none;
   border-radius:11px;
   padding: 30px 10px 10px 10px;
+}
+/*nav-section*/
+.nav-section{
+  background-color:var(--lb-main-color);
+  color:var(--lb-white) ;
+  padding: 7px 0px 5px 0px;
 }

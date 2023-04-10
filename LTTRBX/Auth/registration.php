@@ -7,7 +7,7 @@ include "../header.php";
     <div class="col-md-6">
       <div class="card shadow">
         <div class="card-body">
-          <div class="register-head">
+          <div class="register-head mb-5">
             <h3 class="text-center">Registration</h3>
           </div>
           <form action="savedata.php" method="POST">
