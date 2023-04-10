@@ -1,6 +1,8 @@
 :root{
   --lb-main-color:#1F3BB3;
   --lb-white:#fff;
+  --lb-black:#000;
+  --lb-ligh-grey:#f2eded;
 
 }
 *{
@@ -22,9 +24,43 @@ body{
   border-radius:11px;
   padding: 30px 10px 10px 10px;
 }
-/*nav-section*/
+/*info-section*/
 .nav-section{
   background-color:var(--lb-main-color);
   color:var(--lb-white) ;
   padding: 7px 0px 5px 0px;
+}
+/*navbar-section*/
+.navbar-section{
+ background-color: var(--lb-ligh-grey); 
+}
+.navbar-logo img{
+  height:50px;
+  width:150px;
+}
+.navbar-nav .nav-item{
+  margin-left: 35px;
+}
+.navbar-nav .nav-item:hover{
+  border-bottom:2px solid var(--lb-main-color);
+  transition: 0.2s;
+}
+input.form-control{
+ border: none;
+ border-bottom: 1.5px solid;
+ background-color: var(--lb-ligh-grey);
+}
+input.form-control:hover{
+  border: 1px solid var(--lb-black);
+  background-color: var(--lb-ligh-grey);
+ }
+.account a{
+ text-decoration: none;
+ color:var(--lb-black);
+ font-size: 21px;
+}
+.cart a{
+  text-decoration: none;
+  color:var(--lb-black);
+  font-size:21px;
 }

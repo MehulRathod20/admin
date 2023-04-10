@@ -12,7 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.css">
 </head>
 <body>
-	<!--navbar section start-->
+	<!--info section start-->
 	<section class="nav-section">
 		<div class="container">
 			<div class="row">
@@ -30,10 +30,53 @@
 			</div>
 		</div>
 	</section>
+
+	<!--navabr section-->
+	<section class="navbar-section">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg ">
+				<div class="container-fluid">
+					<a class="navbar-logo" href="#">
+						<img src="https://www.lttrbxtech.com/public/images/media/1647090757Dark_png.png" class="">
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarScroll">
+						<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+						<li class="nav-item">
+							<a class="nav-link" href="#">category</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">deals</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link " href="#">what's new</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link">delivery</a>
+						</li>
+					</ul>
+					<form class="d-flex me-5" role="search">
+						<input class="form-control" type="search" placeholder="Search" aria-label="Search">
+					</form>
+					<div class="account me-3">
+						<a href="#" class=""><i class="fa fa-user"></i> account</a>
+					</div>
+					<div class="cart">
+						<a href="#" class=""><i class="fa fa-cart-shopping"></i> cart</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
+</section>
+	
  
 	<!--js-->
 	<script src="assets/plugin/jquery/jquery.min.js"></script>
-	<script src="assets/js/bootstrap.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 	<script src="assets/js/javascript.js"></script>
 </body>
 </html>
