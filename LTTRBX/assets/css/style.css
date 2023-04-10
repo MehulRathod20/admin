@@ -2,7 +2,7 @@
   --lb-main-color:#1F3BB3;
   --lb-white:#fff;
   --lb-black:#000;
-  --lb-ligh-grey:#f2eded;
+  --lb-light-grey:#f2eded;
 
 }
 *{
@@ -32,7 +32,7 @@ body{
 }
 /*navbar-section*/
 .navbar-section{
- background-color: var(--lb-ligh-grey); 
+ background-color: var(--lb-light-grey); 
 }
 .navbar-logo img{
   height:50px;
@@ -48,11 +48,11 @@ body{
 input.form-control{
  border: none;
  border-bottom: 1.5px solid;
- background-color: var(--lb-ligh-grey);
+ background-color: var(--lb-light-grey);
 }
 input.form-control:hover{
   border: 1px solid var(--lb-black);
-  background-color: var(--lb-ligh-grey);
+  background-color: var(--lb-light-grey);
  }
 .account a{
  text-decoration: none;
@@ -63,4 +63,23 @@ input.form-control:hover{
   text-decoration: none;
   color:var(--lb-black);
   font-size:21px;
+}
+/*slider*/
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

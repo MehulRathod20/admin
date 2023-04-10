@@ -10,6 +10,9 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 	<link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.css">
+	<!--slider-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
 </head>
 <body>
 	<!--info section start-->
@@ -71,12 +74,64 @@
 		</nav>
 	</div>
 </section>
+
+<!--slider-->
+<section class="slider mt-5 mb-5" id="slie">
+	<div class="container-fluid">
+		 <!-- Swiper -->
+		 <div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="https://swiperjs.com/demos/images/nature-3.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="https://swiperjs.com/demos/images/nature-3.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="https://swiperjs.com/demos/images/nature-3.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="https://swiperjs.com/demos/images/nature-3.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="https://swiperjs.com/demos/images/nature-3.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="https://swiperjs.com/demos/images/nature-3.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="https://swiperjs.com/demos/images/nature-3.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="https://swiperjs.com/demos/images/nature-3.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="https://swiperjs.com/demos/images/nature-3.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 	
  
 	<!--js-->
 	<script src="assets/plugin/jquery/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-	<script src="assets/js/javascript.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+	<script src="../assets/js/javascript.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+	<script>
+		
+//slider carousel 
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});
+	</script>
 </body>
 </html>
