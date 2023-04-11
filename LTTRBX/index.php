@@ -37,6 +37,7 @@
 	<!--navabr section-->
 	<section class="navbar-section">
 		<div class="container">
+			<div class="row">
 			<nav class="navbar navbar-expand-lg ">
 				<div class="container-fluid">
 					<a class="navbar-logo" href="#">
@@ -72,46 +73,32 @@
 				</div>
 			</div>
 		</nav>
+</div>
 	</div>
 </section>
 
-<!--slider-->
-<section class="slider mt-5 mb-5" id="slie">
+<!--main swiper-->
+<section class="slider">
 	<div class="container-fluid">
-		 <!-- Swiper -->
-		 <div class="swiper mySwiper">
+		<!-- Swiper -->
+		<div class="swiper mySwiper">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
-					<img src="https://swiperjs.com/demos/images/nature-3.jpg">
+					<img src="https://m.media-amazon.com/images/I/61aURrton0L._SX3000_.jpg">
 				</div>
 				<div class="swiper-slide">
-					<img src="https://swiperjs.com/demos/images/nature-3.jpg">
+					<img src="https://m.media-amazon.com/images/I/61aURrton0L._SX3000_.jpg">
 				</div>
 				<div class="swiper-slide">
-					<img src="https://swiperjs.com/demos/images/nature-3.jpg">
+					<img src="https://m.media-amazon.com/images/I/61aURrton0L._SX3000_.jpg">
 				</div>
-				<div class="swiper-slide">
-					<img src="https://swiperjs.com/demos/images/nature-3.jpg">
-				</div>
-				<div class="swiper-slide">
-					<img src="https://swiperjs.com/demos/images/nature-3.jpg">
-				</div>
-				<div class="swiper-slide">
-					<img src="https://swiperjs.com/demos/images/nature-3.jpg">
-				</div>
-				<div class="swiper-slide">
-					<img src="https://swiperjs.com/demos/images/nature-3.jpg">
-				</div>
-				<div class="swiper-slide">
-					<img src="https://swiperjs.com/demos/images/nature-3.jpg">
-				</div>
-				<div class="swiper-slide">
-					<img src="https://swiperjs.com/demos/images/nature-3.jpg">
-				</div>
-			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
 		</div>
 	</div>
 </section>
+
+
 	
  
 	<!--js-->
@@ -120,18 +107,18 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 	<script src="../assets/js/javascript.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  
 
-	<script>
-		
-//slider carousel 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4,
-  spaceBetween: 30,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-});
-	</script>
+	<!-- main Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+
 </body>
 </html>
