@@ -10,14 +10,12 @@ $output = "";
 			// $output = '';
 						while ($row = mysqli_fetch_assoc($result)) {
 							// code...
-							$output .="<tr>
-				            <td>User Name</td>
-				            <td><input type='text' id='edit-menu' value='{$row['menu']}'></td>
-				            <td><input type='text' id='edit-id' hidden value='{$row['id']}'></td>
-				          </tr>
-				          <tr>
-				            <td><button id='save'> Save</button> </td>
-				          </tr>";
+							$output .=" <tr>
+							<td>User Name</td>
+							<td><input type='text' id='edit-menu' value='{$row['menu']}'></td>
+							<td><input type='text' id='edit-id' hidden value='{$row['id']}'></td>
+						</tr>
+						<tr>";
 						}
 					
 					

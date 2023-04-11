@@ -321,7 +321,9 @@
               <div id="model-form">
                 <h2>Edit Form</h2>
                 <table cellpadding="10px" width="100%">
-                  
+               
+				            <td><button id='save'> Save</button> </td>
+				          </tr>
                 </table>
                 <div id="close-btn">X</div>
             </div>
