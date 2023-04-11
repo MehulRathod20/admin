@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,21 +8,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Lttrbx </title>
   <!-- plugins:css -->
-  <link rel="stylesheet" href="vendors/feather/feather.css">
-  <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
-  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
-  <link rel="stylesheet" href="vendors/typicons/typicons.css">
-  <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
-  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../../vendors/feather/feather.css">
+  <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../../vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="../../vendors/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
   <!-- endinject -->
   <!-- Plugin css for this page -->
-  <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
-  <link rel="stylesheet" href="js/select.dataTables.min.css">
+  <link rel="stylesheet" href="../../vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="../../js/select.dataTables.min.css">
   <!-- End plugin css for this page -->
   <!-- inject:css -->
-  <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+  <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
   <!-- endinject -->
-  <link rel="shortcut icon" href="images/favicon.png" />
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+  <!-- header css -->
+  <link rel="stylesheet" href="../../css/pages/header_menu.css">
+  <!-- end header css -->
 </head>
 <body>
   <div class="container-scroller">
@@ -34,11 +38,11 @@
           </button>
         </div>
         <div>
-          <a class="navbar-brand brand-logo" href="index.php">
+          <a class="navbar-brand brand-logo" href="../../index.php">
             <img src="https://www.lttrbxtech.com/public/images/media/1647090757Dark_png.png" alt="logo" />
           </a>
           <a class="navbar-brand brand-logo-mini" href="index.php">
-            <img src="images/logo-mini.svg" alt="logo" />
+            <img src="../images/logo-mini.svg" alt="logo" />
           </a>
         </div>
       </div>
@@ -148,7 +152,7 @@
               <div class="dropdown-divider"></div>
               <a class="dropdown-item preview-item">
                 <div class="preview-thumbnail">
-                  <img src="images/faces/face10.jpg" alt="image" class="img-sm profile-pic">
+                  <img src="../../images/faces/face10.jpg" alt="image" class="img-sm profile-pic">
                 </div>
                 <div class="preview-item-content flex-grow py-2">
                   <p class="preview-subject ellipsis font-weight-medium text-dark">Marian Garner </p>
@@ -157,7 +161,7 @@
               </a>
               <a class="dropdown-item preview-item">
                 <div class="preview-thumbnail">
-                  <img src="images/faces/face12.jpg" alt="image" class="img-sm profile-pic">
+                  <img src="../../images/faces/face12.jpg" alt="image" class="img-sm profile-pic">
                 </div>
                 <div class="preview-item-content flex-grow py-2">
                   <p class="preview-subject ellipsis font-weight-medium text-dark">David Grey </p>
@@ -166,7 +170,7 @@
               </a>
               <a class="dropdown-item preview-item">
                 <div class="preview-thumbnail">
-                  <img src="images/faces/face1.jpg" alt="image" class="img-sm profile-pic">
+                  <img src="../../images/faces/face1.jpg" alt="image" class="img-sm profile-pic">
                 </div>
                 <div class="preview-item-content flex-grow py-2">
                   <p class="preview-subject ellipsis font-weight-medium text-dark">Travis Jenkins </p>
@@ -177,10 +181,10 @@
           </li>
           <li class="nav-item dropdown d-none d-lg-block user-dropdown">
             <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-              <img class="img-xs rounded-circle" src="images/faces/face8.jpg" alt="Profile image"> </a>
+              <img class="img-xs rounded-circle" src="../../images/faces/face8.jpg" alt="Profile image"> </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
               <div class="dropdown-header text-center">
-                <img class="img-md rounded-circle" src="images/faces/face8.jpg" alt="Profile image">
+                <img class="img-md rounded-circle" src="../../images/faces/face8.jpg" alt="Profile image">
                 <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
                 <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
               </div>
@@ -223,7 +227,7 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.php">
+            <a class="nav-link" href="../../index.php">
               <i class="mdi mdi-grid-large menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>
@@ -237,7 +241,7 @@
             </a>
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.php"> Login </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../../../Auth/login.php"> Login </a></li>
               </ul>
             </div>
           </li>
@@ -250,10 +254,10 @@
             </a>
             <div class="collapse" id="setting">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/header/header_menu.php">Header</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.php">image</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/slider/slider.php">Slider</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.php">Footer</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../header/header_menu.php">Header</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/samples/login.php">image</a></li>
+                <li class="nav-item"> <a class="nav-link" href="slider.php">Slider</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/samples/login.php">Footer</a></li>
               </ul>
             </div>
           </li>
@@ -261,33 +265,87 @@
         </ul>
       </nav>
       <!-- main-panel ends -->
-    </div>
+
+         <!-- Add Header Menu -->
+            
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card" id="header-info-form">
+                            <div class="card-body">
+                                <h4 class="card-title">Add Header Information</h4>
+                                <form class="forms-sample" >
+                                    <div class="form-group">
+                                        <label for="mobile">Add Mobile Number</label>
+                                        <input type="number" class="form-control" id="add-header-num" placeholder="Add slider image">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="header-text">Add Header Text</label>
+                                        <input type="text" class="form-control" id="add-header-text" placeholder="Add slider image">
+                                    </div>
+                                        <button type="submit" id="header-info-btn" class="btn btn-primary mr-2">Add</button>
+                                        <button class="btn btn-light">Cancel</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               <!-- show menu Table  -->
+
+            
+                      <div class="table-responsive mt-6">
+                        <table class="table table-striped">
+                          <thead>
+                             <tr>
+                              <th> Id </th>
+                              <th> slider images </th>
+                              <th>Action </th>
+                            </tr>
+                            </thead>
+                            <tbody id="table-data">
+
+                            </tbody>
+                        </table>
+                      </div>
+
+      <!-- End menu table -->
+            </div>
+          
+        <!-- end header menu -->
     <!-- page-body-wrapper ends -->
+
+        
   </div>
+  
   <!-- container-scroller -->
 
   <!-- plugins:js -->
-  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page -->
-  <script src="vendors/chart.js/Chart.min.js"></script>
-  <script src="vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
-  <script src="vendors/progressbar.js/progressbar.min.js"></script>
+  <!-- <script src="../../vendors/chart.js/Chart.min.js"></script> -->
+  <script src="../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="../../vendors/progressbar.js/progressbar.min.js"></script>
 
   <!-- End plugin js for this page -->
   <!-- inject:js -->
-  <script src="js/off-canvas.js"></script>
-  <script src="js/hoverable-collapse.js"></script>
-  <script src="js/template.js"></script>
-  <script src="js/settings.js"></script>
-  <script src="js/todolist.js"></script>
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+  <script src="../../js/settings.js"></script>
+  <script src="../../js/todolist.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
-  <script src="js/jquery.cookie.js" type="text/javascript"></script>
-  <script src="js/dashboard.js"></script>
-  <script src="js/Chart.roundedBarCharts.js"></script>
+  <script src="../../js/jquery.cookie.js" type="text/javascript"></script>
+  <script src="../../js/dashboard.js"></script>
+  <script src="../../js/Chart.roundedBarCharts.js"></script>
   <!-- End custom js for this page-->
+  
+  <!-- header js  -->
+  <script src="../../js/pages_js/pages.js"> </script>
+  <!-- end header js -->
+  
 </body>
 
 </html>
-
