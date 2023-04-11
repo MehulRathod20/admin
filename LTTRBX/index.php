@@ -60,6 +60,12 @@
 						<li class="nav-item">
 							<a class="nav-link">delivery</a>
 						</li>
+						<li class="nav-item">
+							<a class="nav-link">delivery</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link">delivery</a>
+						</li>
 					</ul>
 					<form class="d-flex me-5" role="search">
 						<input class="form-control" type="search" placeholder="Search" aria-label="Search">
@@ -78,19 +84,19 @@
 </section>
 
 <!--main swiper-->
-<section class="slider">
+<section class="slider mb-5">
 	<div class="container-fluid">
 		<!-- Swiper -->
 		<div class="swiper mySwiper">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
-					<img src="https://m.media-amazon.com/images/I/61aURrton0L._SX3000_.jpg">
+					<img src="https://m.media-amazon.com/images/I/61aURrton0L._SX3000_.jpg" class="" >
 				</div>
 				<div class="swiper-slide">
-					<img src="https://m.media-amazon.com/images/I/61aURrton0L._SX3000_.jpg">
+					<img src="https://m.media-amazon.com/images/I/71BztIvmlfL._SX3000_.jpg">
 				</div>
 				<div class="swiper-slide">
-					<img src="https://m.media-amazon.com/images/I/61aURrton0L._SX3000_.jpg">
+					<img src="https://images-eu.ssl-images-amazon.com/images/G/31/Biss_2023/BISS_GW/Spring_tools/3000._CB591433808_.jpg">
 				</div>
 			<div class="swiper-button-next"></div>
 			<div class="swiper-button-prev"></div>
@@ -98,27 +104,101 @@
 	</div>
 </section>
 
+<!--product page start-->
+<section class="product my-4" id="">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+			<h2 class="">Products For You<h2>
+				<div>
+					<select class="form-select" aria-label="Default select example">
+						<option selected><small class="text-muted">sort by:</small>relevance</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					</select>
+				</div>
+				<div class="row mt-2">
+					<div class="col-md-12">
+						<div class="filter">
+							<h5>filter</h5>
+							<div class="my-3">
+								<select class="form-select" aria-label="Default select example">
+									<option selected>category</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+							</div>
+							<div class="my-3">
+								<select class="form-select" aria-label="Default select example">
+									<option selected>category</option>
+									<option value="1"></option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="card">
+							<img src="https://images.meesho.com/images/products/195488385/5yjty_400.webp" class="img-fluid" alt="...">
+							<div class="card-body">
+								<p class="d-flex justify-content-end mb-2">+3more</p>
+								<h6 class="mb-2 text-muted">Realme 6 cases & covers</h6>
+								<h5 class="fw-bold mb-2">212<small class="text-muted"> onwards</small></h5>
+								<small class="mb-5">free delivery</small>
+								<p class="rating">4.0 <i class="fa-sharp fa-solid fa-star"></i></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card">
+							<img src="https://images.meesho.com/images/products/195488385/5yjty_400.webp" class="img-fluid" alt="...">
+							<div class="card-body">
+								<p class="d-flex justify-content-end mb-2">+3more</p>
+								<h6 class="mb-2 text-muted">Realme 6 cases & covers</h6>
+								<h5 class="fw-bold mb-2">212<small class="text-muted"> onwards</small></h5>
+								<small class="mb-5">free delivery</small>
+								<p class="rating">4.0 <i class="fa-sharp fa-solid fa-star"></i></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card">
+							<img src="https://images.meesho.com/images/products/195488385/5yjty_400.webp" class="img-fluid" alt="...">
+							<div class="card-body">
+								<p class="d-flex justify-content-end mb-2">+3more</p>
+								<h6 class="mb-2 text-muted">Realme 6 cases & covers</h6>
+								<h5 class="fw-bold mb-2">212<small class="text-muted"> onwards</small></h5>
+								<small class="mb-5">free delivery</small>
+								<p class="rating">4.0 <i class="fa-sharp fa-solid fa-star"></i></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card">
+							<img src="https://images.meesho.com/images/products/195488385/5yjty_400.webp" class="img-fluid" alt="...">
+							<div class="card-body">
+								<p class="d-flex justify-content-end mb-2">+3more</p>
+								<h6 class="mb-2 text-muted">Realme 6 cases & covers</h6>
+								<h5 class="fw-bold mb-2">212<small class="text-muted"> onwards</small></h5>
+								<small class="mb-5">free delivery</small>
+								<p class="rating">4.0 <i class="fa-sharp fa-solid fa-star"></i></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
-	
- 
-	<!--js-->
-	<script src="assets/plugin/jquery/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-	<script src="../assets/js/javascript.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  
+<?php
 
-	<!-- main Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
-
-
-</body>
-</html>
+ include "footer.php";
+?>
