@@ -267,15 +267,12 @@
       <!-- main-panel ends -->
 
        <!--upload header image -->
-       <div class="container">
+       <div class="container mt-5">
         <div class="row">
           <div class="col-12 col-md-4">
             <div class="card">
-              <div class="card-header">
-                <h5 class="card-title">update</h5>
-              </div>
-              <div class="card-content">
                 <div class="card-body">
+                  <h3>update</h3>
                 <?php
                 
                 include "../config.php";
@@ -295,7 +292,7 @@
                       </div>
                       <input type="file" name="new-image">
                       <img  src="admin-panel/admin/upload/<?php echo $row['image'];?>" class="img-fluid">
-                      <input type="" name="old-image" value="<?php echo $row['image'];?>">
+                      <input type="hidden" name="old-image" value="<?php echo $row['image'];?>">
                       <button  class="btn btn-primary mt-3" name="update">update</button>
                     </form>
                     <?php

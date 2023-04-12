@@ -95,4 +95,46 @@ $(document).ready(function(){
 
      });
 
+     //slider data show  in table
+
+     function loadslider(){    //loadtable function
+
+      $.ajax({
+  
+        url:"show_slider.php",
+        type:"POST",
+        success:function(data){
+          $('#table_data').html(data);
+        }
+      });
+    }
+    loadslider();
+
+    //delete slider image 
+    
+    $(document).on("click",".delete", function(){
+      var sid = $(this).data("id");
+      var element = this;
+      $.ajax({
+        url:"delete_slider.php",
+        type:"POST",
+        data:{aid : sid},
+        success:function(data){
+          if (data == 1) {
+            loadslider();
+            $(element).closest("tr").fadeOut();
+          }
+          else{              
+          }            
+        } 
+      });
+
+     });
+
+
+  
+
 });
+
+
+  

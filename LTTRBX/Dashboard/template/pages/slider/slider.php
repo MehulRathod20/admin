@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="../../vendors/typicons/typicons.css">
   <link rel="stylesheet" href="../../vendors/simple-line-icons/css/simple-line-icons.css">
   <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+	<link rel="stylesheet" type="text/css" href="../../../../assets/fontawesome/css/all.css">
+
   <!-- endinject -->
   <!-- Plugin css for this page -->
   <link rel="stylesheet" href="../../vendors/datatables.net-bs4/dataTables.bootstrap4.css">
@@ -267,14 +269,18 @@
 
 <!--slider-->
 <div class="container mt-5">
+  <!--slider form row1-->
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-5">
       <div class="card">
         <div class="card-body">
           <p id="error"></p>
-          <form action="" method="POST" enctype="multipart/form-data">
+          <form action="add_slider_image.php" method="POST" enctype="multipart/form-data">
+          <div class="form-group">
+                    <input type="hidden" name="id"  class="form-control" value="" placeholder="">
+                  </div>
           <div class="mb-3">
-            <input type="file" id="image" name="upload" aria-describedby="">
+            <input type="file" id="image" name="fileslide" aria-describedby="">
           </div>
           <div class="mb-3">
             <input type="submit" value="upload" class="btn btn-primary" id="submit" name="" aria-describedby="">
@@ -284,7 +290,27 @@
       </div>
     </div>
   </div>
+  <!--slider table row2-->
+  <div class="row mt-5">
+    <div class="col-md-10">
+      <!--php code for slider -->
+    <table class="table shadow" >
+      <thead>
+        <tr>
+          <th scope='col'>id</th>
+          <th scope='col'>image</th>
+          <th scope='col'>action</th>
+        </tr>
+      </thead>
+      <tbody id="table_data">
+
+      </tbody>
+      </table>
+    </div>
+  </div>
 </div>
+
+
   
    
   
@@ -312,35 +338,9 @@
   
   <!-- header js  -->
   <script src="../../js/pages_js/header_menu.js"> </script>
+	<script src="assets/js/javascript.js"></script>
+
   <!-- end header js -->
-
-  <script>
-    $(document).ready(function(){
-      $('#submit').click(function(e){
-        e.preventDefault();
-
-        let form_data = new FormData();
-        let img =$("#image")[0].files;
-
-        if(img.length > 0){
-          form_data.append('my_image',img[0]);
-
-          $.ajax({
-            url:'upload.php',
-            type:'post',
-            data:form_data,
-            contentType:false,
-            processData:false,
-            success:function(res){
-              console.log(res);
-            }
-          });
-        }else{
-          $("#error").text("please select an image.")
-        }
-      });
-    });
-  </script>
   
 </body>
 </html>

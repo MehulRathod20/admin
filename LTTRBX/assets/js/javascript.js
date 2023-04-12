@@ -11,3 +11,6 @@ jQuery("#phone").keypress(function (e) {
     return false;
   }
 });
+
+//jquery code for slider data fetch in table
+
