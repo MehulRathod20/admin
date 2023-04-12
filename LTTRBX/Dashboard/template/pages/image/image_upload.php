@@ -255,7 +255,7 @@
             <div class="collapse" id="setting">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="header_menu.php">Header</a></li>
-                <li class="nav-item"> <a class="nav-link" href="image_upload.php">image</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/samples/login.php">image</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../slider/slider.php">Slider</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../../pages/samples/login.php">Footer</a></li>
               </ul>
@@ -266,67 +266,46 @@
       </nav>
       <!-- main-panel ends -->
 
-         <!-- Add Header Menu -->
-            
-            <div class="container mt-5">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="card" id="add-menu-form">
-                            <div class="card-body">
-                                <h4 class="card-title">Add New Menu</h4>
-                                <form class="forms-sample" >
-                                    <div class="form-group">
-                                        <label for="Menu">Add Menu</label>
-                                        <input type="text" class="form-control" id="add-new-menu" placeholder="Add Menu">
-                                    </div>
-                                        <button type="submit" id="submit" class="btn btn-primary mr-2">Add</button>
-                                        <button class="btn btn-light">Cancel</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-               <!-- show menu Table  -->
-
-            
-                      <div class="table-responsive mt-6">
-                        <table class="table table-striped">
-                          <thead>
-                             <tr>
-                              <th> Id </th>
-                              <th> Main Menu </th>
-                              <th>Action </th>
-                            </tr>
-                            </thead>
-                            <tbody id="table-data">
-
-                            </tbody>
-                        </table>
+       <!--upload header image -->
+       <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title">update</h5>
+              </div>
+              <div class="card-content">
+                <div class="card-body">
+                <?php
+                
+                include "../config.php";
+                
+                $sql = "SELECT * FROM logo_image";
+                
+                $result = mysqli_query($conn,$sql) or die("query failed.");
+                
+                if(mysqli_num_rows($result) > 0){
+                  
+                  while($row = mysqli_fetch_assoc($result)){
+                    
+                    ?>
+                    <form action="update_image.php" method="POST" enctype="multipart/form-data">
+                      <div class="form-group">
+                        <input type="hidden" name="id"  class="form-control" value="<?php echo $row['id'];?>" placeholder="">
                       </div>
-
-      <!-- End menu table -->
+                      <input type="file" name="new-image">
+                      <img  src="admin-panel/admin/upload/<?php echo $row['image'];?>" class="img-fluid">
+                      <input type="" name="old-image" value="<?php echo $row['image'];?>">
+                      <button  class="btn btn-primary mt-3" name="update">update</button>
+                    </form>
+                    <?php
+                    }
+                  }
+                  ?>
+                  </div>
+                </div>
+              </div>
             </div>
-          
-        <!-- end header menu -->
-    <!-- page-body-wrapper ends -->
-
-        
-  </div>
-  
-  <!-- container-scroller -->
-
-  <!-- Edit model -->
-  <div id="model">
-              <div id="model-form">
-                <h2>Edit Form</h2>
-                <table cellpadding="10px" width="100%">
-               
-				            
-                </table>
-                <div id="close-btn">X</div>
-            </div>
-          <!-- end Edit model -->
 
   <!-- plugins:js -->
   <script src="../../vendors/js/vendor.bundle.base.js"></script>

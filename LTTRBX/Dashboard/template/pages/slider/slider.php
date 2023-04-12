@@ -255,79 +255,39 @@
             <div class="collapse" id="setting">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="header_menu.php">Header</a></li>
-                <li class="nav-item"> <a class="nav-link" href="image_upload.php">image</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/samples/login.php">image</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../slider/slider.php">Slider</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../../pages/samples/login.php">Footer</a></li>
               </ul>
             </div>
           </li>
-
         </ul>
       </nav>
-      <!-- main-panel ends -->
+<!-- main-panel ends -->
 
-         <!-- Add Header Menu -->
-            
-            <div class="container mt-5">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="card" id="add-menu-form">
-                            <div class="card-body">
-                                <h4 class="card-title">Add New Menu</h4>
-                                <form class="forms-sample" >
-                                    <div class="form-group">
-                                        <label for="Menu">Add Menu</label>
-                                        <input type="text" class="form-control" id="add-new-menu" placeholder="Add Menu">
-                                    </div>
-                                        <button type="submit" id="submit" class="btn btn-primary mr-2">Add</button>
-                                        <button class="btn btn-light">Cancel</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-               <!-- show menu Table  -->
-
-            
-                      <div class="table-responsive mt-6">
-                        <table class="table table-striped">
-                          <thead>
-                             <tr>
-                              <th> Id </th>
-                              <th> Main Menu </th>
-                              <th>Action </th>
-                            </tr>
-                            </thead>
-                            <tbody id="table-data">
-
-                            </tbody>
-                        </table>
-                      </div>
-
-      <!-- End menu table -->
-            </div>
-          
-        <!-- end header menu -->
-    <!-- page-body-wrapper ends -->
-
-        
+<!--slider-->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <p id="error"></p>
+          <form action="" method="POST" enctype="multipart/form-data">
+          <div class="mb-3">
+            <input type="file" id="image" name="upload" aria-describedby="">
+          </div>
+          <div class="mb-3">
+            <input type="submit" value="upload" class="btn btn-primary" id="submit" name="" aria-describedby="">
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
   
-  <!-- container-scroller -->
-
-  <!-- Edit model -->
-  <div id="model">
-              <div id="model-form">
-                <h2>Edit Form</h2>
-                <table cellpadding="10px" width="100%">
-               
-				            
-                </table>
-                <div id="close-btn">X</div>
-            </div>
-          <!-- end Edit model -->
-
+   
+  
   <!-- plugins:js -->
   <script src="../../vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
@@ -353,7 +313,34 @@
   <!-- header js  -->
   <script src="../../js/pages_js/header_menu.js"> </script>
   <!-- end header js -->
+
+  <script>
+    $(document).ready(function(){
+      $('#submit').click(function(e){
+        e.preventDefault();
+
+        let form_data = new FormData();
+        let img =$("#image")[0].files;
+
+        if(img.length > 0){
+          form_data.append('my_image',img[0]);
+
+          $.ajax({
+            url:'upload.php',
+            type:'post',
+            data:form_data,
+            contentType:false,
+            processData:false,
+            success:function(res){
+              console.log(res);
+            }
+          });
+        }else{
+          $("#error").text("please select an image.")
+        }
+      });
+    });
+  </script>
   
 </body>
-
 </html>

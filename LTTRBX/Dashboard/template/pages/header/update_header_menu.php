@@ -15,7 +15,9 @@ $output = "";
 							<td><input type='text' id='edit-menu' value='{$row['menu']}'></td>
 							<td><input type='text' id='edit-id' hidden value='{$row['id']}'></td>
 						</tr>
-						<tr>";
+						<tr>
+						<td><button id='save'> Save</button> </td>
+				          </tr>";
 						}
 					
 					

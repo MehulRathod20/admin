@@ -35,38 +35,63 @@
 	</section>
 
 	<!--navabr section-->
+
 	<section class="navbar-section">
 		<div class="container">
 			<div class="row">
 			<nav class="navbar navbar-expand-lg ">
 				<div class="container-fluid">
+				<?php
+				include "config.php";
+				
+				$sql="SELECT * FROM logo_image";
+				
+				$result=mysqli_query($conn,$sql)or die("sql query failed");
+				
+				if (mysqli_num_rows($result)>0) {
+
+				?>
 					<a class="navbar-logo" href="#">
-						<img src="https://www.lttrbxtech.com/public/images/media/1647090757Dark_png.png" class="">
+						<?php
+						while($row=mysqli_fetch_assoc($result)){
+						?>
+						<img src="Dashboard/template/pages/upload/<?php echo $row['image'];?>" class="" alt="demo" width="150px" height="50px">
+						<?php
+						}
+						?>
 					</a>
+					<?php
+				}
+					?>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbarScroll">
+					<?php
+					
+					include "config.php";
+					
+					$sql="SELECT * FROM header_menu";
+
+					$result=mysqli_query($conn,$sql);
+
+					if(mysqli_num_rows($result) > 0){
+
+					?>
 						<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+						<?php
+						while($row=mysqli_fetch_assoc($result)){
+						?>
 						<li class="nav-item">
-							<a class="nav-link" href="#">category</a>
+							<a class="nav-link" href="#"><?php echo $row['menu'];?></a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">deals</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link " href="#">what's new</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">delivery</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">delivery</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link">delivery</a>
-						</li>
+						<?php
+						}
+						?>
 					</ul>
+					<?php
+					}
+					?>
 					<form class="d-flex me-5" role="search">
 						<input class="form-control" type="search" placeholder="Search" aria-label="Search">
 					</form>
