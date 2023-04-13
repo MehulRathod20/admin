@@ -1,7 +1,4 @@
 $(document).ready(function(){
-
-
-
 // Header Info  start
 
      // Show header info 

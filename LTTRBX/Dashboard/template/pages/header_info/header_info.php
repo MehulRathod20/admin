@@ -259,7 +259,7 @@
             <div class="collapse" id="setting">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="../header/header_menu.php">Header</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/samples/login.php">image</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../image/image_upload.php">image</a></li>
                 <li class="nav-item"> <a class="nav-link" href="slider.php">Slider</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../../pages/samples/login.php">Footer</a></li>
               </ul>
