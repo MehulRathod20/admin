@@ -18,15 +18,28 @@
 
 <body>
 	<!--info section start-->
+
+	<!--php code for header info-->
+	<?php
+	include "config.php";
+
+	$sql="SELECT * FROM header_info";
+
+	$result=mysqli_query($conn,$sql);
+
+	if(mysqli_num_rows($result)){
+		 
+		while($row=mysqli_fetch_assoc($result)){
+	?>
 	<section class="nav-section">
 		<div class="container">
 			<div class="row">
 				<div class="d-flex justify-content-between">
 					<div class="nav-phone">
-						<small><i class="fa fa-phone"></i> +9879879877</small>
+						<small><i class="fa fa-phone"></i> <?php echo $row['phone'];?></small>
 					</div>
 					<div>
-						<small>get 50% of on selected item |<span class="ms-3">shop now</span></small>
+						<small><?php echo $row['header_text'];?><span class="ms-3">|<?php echo $row['other_text'];?></span></small>
 					</div>
 					<div>
 						<small>eng <i class="fa fa-light fa-chevron-down"></i></small>
@@ -35,6 +48,10 @@
 			</div>
 		</div>
 	</section>
+	<?php
+		}
+	}
+	?>
 
 	<!--navabr section-->
 	<section class="navbar-section">

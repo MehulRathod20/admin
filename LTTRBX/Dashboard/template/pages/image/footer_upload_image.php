@@ -2,13 +2,13 @@
 
 include "../config.php";
 
-if(isset($_FILES['fileToUpload'])){
+if(isset($_FILES['footerfileupload'])){
   $errors = array();
  
-  $file_name =$_FILES['fileToUpload']['name'];
-  $file_size =$_FILES['fileToUpload']['size'];
-  $file_tmp =$_FILES['fileToUpload']['tmp_name'];
-  $file_type =$_FILES['fileToUpload']['type'];
+  $file_name =$_FILES['footerfileupload']['name'];
+  $file_size =$_FILES['footerfileupload']['size'];
+  $file_tmp =$_FILES['footerfileupload']['tmp_name'];
+  $file_type =$_FILES['footerfileupload']['type'];
   $file_ext = strtolower(end(explode('.',$file_name)));
   $extensions = array("jpeg","jpg","png");
 
@@ -27,7 +27,7 @@ if(isset($_FILES['fileToUpload'])){
   }
 
 }
-$sql ="INSERT INTO logo_image(image)VALUES('{$file_name}')"; 
+$sql ="INSERT INTO footer_image(image)VALUES('{$file_name}')"; 
 
 
 

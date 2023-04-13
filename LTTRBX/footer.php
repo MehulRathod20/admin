@@ -2,9 +2,30 @@
 	<section class="footer mt-5">
 		<div class="container">
 			<div class="row">
+				<!-- start php code for logo image-->
+				<?php
+				
+				include "config.php";
+				
+				$sql = "SELECT * FROM footer_image";
+				
+				$result = mysqli_query($conn, $sql) or die("sql query failed");
+				
+				if (mysqli_num_rows($result) > 0) {
+					
+					?>
 				<div class="col-md-12 mb-3 text-center">
-					<img src="https://www.lttrbxtech.com/public/images/media/1647090757Dark_png.png" class="" width="150px" height="50px">
+					<?php
+					while($row=mysqli_fetch_assoc($result)){
+					?>
+					<img src="Dashboard/template/pages/upload/<?php echo $row['image']; ?>" class="" width="150px" height="50px">
+					<?php
+					}
+					?>
 				</div>
+				<?php
+				}
+				?>
 			</div>
 			<div class="row">
 				<div class="col-md-1">
