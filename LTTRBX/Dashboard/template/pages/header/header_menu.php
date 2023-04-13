@@ -24,7 +24,7 @@
   <!-- endinject -->
   <link rel="shortcut icon" href="../../images/favicon.png" />
   <!-- header css -->
-  <link rel="stylesheet" href="../../css/pages/header_menu.css">
+  <link rel="stylesheet" href="../../css/pages/pages.css">
   <!-- end header css -->
 </head>
 <body>
@@ -254,8 +254,9 @@
             </a>
             <div class="collapse" id="setting">
               <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="../header_info/header_info.php">Header Info</a></li>
                 <li class="nav-item"> <a class="nav-link" href="header_menu.php">Header</a></li>
-                <li class="nav-item"> <a class="nav-link" href="image_upload.php">image</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/samples/login.php">image</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../slider/slider.php">Slider</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../../pages/samples/login.php">Footer</a></li>
               </ul>
@@ -279,8 +280,7 @@
                                         <label for="Menu">Add Menu</label>
                                         <input type="text" class="form-control" id="add-new-menu" placeholder="Add Menu">
                                     </div>
-                                        <button type="submit" id="submit" class="btn btn-primary mr-2">Add</button>
-                                        <button class="btn btn-light">Cancel</button>
+                                        <button type="submit" id="submit" class="btn btn-primary mr-2">Add</button>                
                                 </form>
                             </div>
                         </div>
@@ -295,12 +295,12 @@
                           <thead>
                              <tr>
                               <th> Id </th>
-                              <th> Main Menu </th>
+                              <th> Menu </th>
                               <th>Action </th>
                             </tr>
                             </thead>
                             <tbody id="table-data">
-
+                            
                             </tbody>
                         </table>
                       </div>
@@ -321,8 +321,7 @@
               <div id="model-form">
                 <h2>Edit Form</h2>
                 <table cellpadding="10px" width="100%">
-               
-				            
+                  
                 </table>
                 <div id="close-btn">X</div>
             </div>
@@ -351,7 +350,7 @@
   <!-- End custom js for this page-->
   
   <!-- header js  -->
-  <script src="../../js/pages_js/header_menu.js"> </script>
+  <script src="../../js/pages_js/pages.js"> </script>
   <!-- end header js -->
   
 </body>

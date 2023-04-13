@@ -59,12 +59,12 @@ $(document).ready(function(){
 
         $("#model").show();
 
-        var uid = $(this).data("id");
+        var mid = $(this).data("id");
 
         $.ajax({
-          url: "update_header_menu.php",
+          url: "fetch_data.php",
           type:"POST",
-          data:{id : uid},
+          data:{id : mid},
           success:function(data){
             $("#model-form table").html(data);
           }
@@ -99,28 +99,42 @@ $(document).ready(function(){
     //  Header menu  end 
 
 
-    // Header Info  start
+   //slider data show  in table
 
-    // insert header information
-    $("#header-info-btn").on("click",function(e){
-      // e.preventDefault();
-     var num = $("#add-header-num").val();
-     var txt = $("#add-header-text").val();
-     $.ajax({
-       url:"insert_Header_info.php",
-       type: "POST",
-       data: {number : num , text : txt},
-       success: function(data){
-         if (data == 1) {
-           alert("Header Info Added.");
-         }
-         else{
-             // $("#error-message").html("Can't Add Menu or Sub Menu.").slideDown();
-           alert("Can't Add Header Info.");
-       }
-         }
-     });
+   function loadslider(){    //loadtable function
+
+    $.ajax({
+
+      url:"show_slider.php",
+      type:"POST",
+      success:function(data){
+        $('#table_data').html(data);
+      }
+    });
+  }
+  loadslider();
+
+  //delete slider image 
+  
+  $(document).on("click",".delete", function(){
+    var sid = $(this).data("id");
+    var elem = this;
+    $.ajax({
+      url:"delete_slider.php",
+      type:"POST",
+      data:{aid : sid},
+      success:function(data){
+        if (data == 1) {
+          loadslider();
+          $(elem).closest("tr").fadeOut();
+        }
+        else{              
+        }            
+      } 
+    });
+
    });
+
    
 
 });

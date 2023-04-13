@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,9 +23,10 @@
   <!-- endinject -->
   <link rel="shortcut icon" href="../../images/favicon.png" />
   <!-- header css -->
-  <link rel="stylesheet" href="../../css/pages/header_menu.css">
+  <link rel="stylesheet" href="../../css/pages/pages.css">
   <!-- end header css -->
 </head>
+
 <body>
   <div class="container-scroller">
     <!-- partial:partials/_navbar.php -->
@@ -46,7 +46,7 @@
           </a>
         </div>
       </div>
-      <div class="navbar-menu-wrapper d-flex align-items-top"> 
+      <div class="navbar-menu-wrapper d-flex align-items-top">
         <ul class="navbar-nav">
           <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
             <h1 class="welcome-text">Good Morning, <span class="text-black fw-bold">John Doe</span></h1>
@@ -57,7 +57,7 @@
           <li class="nav-item dropdown d-none d-lg-block">
             <a class="nav-link dropdown-bordered dropdown-toggle dropdown-toggle-split" id="messageDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false"> Select Category </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="messageDropdown">
-              <a class="dropdown-item py-3" >
+              <a class="dropdown-item py-3">
                 <p class="mb-0 font-weight-medium float-left">Select category</p>
               </a>
               <div class="dropdown-divider"></div>
@@ -139,7 +139,7 @@
               </a>
             </div>
           </li>
-          <li class="nav-item dropdown"> 
+          <li class="nav-item dropdown">
             <a class="nav-link count-indicator" id="countDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="icon-bell"></i>
               <span class="count"></span>
@@ -209,8 +209,12 @@
         <div id="theme-settings" class="settings-panel">
           <i class="settings-close ti-close"></i>
           <p class="settings-heading">SIDEBAR SKINS</p>
-          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border me-3"></div>Light</div>
-          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border me-3"></div>Dark</div>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme">
+            <div class="img-ss rounded-circle bg-light border me-3"></div>Light
+          </div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme">
+            <div class="img-ss rounded-circle bg-dark border me-3"></div>Dark
+          </div>
           <p class="settings-heading mt-2">HEADER SKINS</p>
           <div class="color-tiles mx-0 px-4">
             <div class="tiles success"></div>
@@ -266,86 +270,107 @@
       </nav>
       <!-- main-panel ends -->
 
-         <!-- Add Header Menu -->
-            
-            <div class="container mt-5">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="card" id="header-info-form">
-                            <div class="card-body">
-                                <h4 class="card-title">Add Header Information</h4>
-                                <form class="forms-sample" >
-                                    <div class="form-group">
-                                        <label for="mobile">Add Mobile Number</label>
-                                        <input type="number" class="form-control" id="add-header-num" placeholder="Add slider image">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="header-text">Add Header Text</label>
-                                        <input type="text" class="form-control" id="add-header-text" placeholder="Add slider image">
-                                    </div>
-                                        <button type="submit" id="header-info-btn" class="btn btn-primary mr-2">Add</button>
-                                        <button class="btn btn-light">Cancel</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <!-- Add Header Menu -->
 
-               <!-- show menu Table  -->
-
-            
-                      <div class="table-responsive mt-6">
-                        <table class="table table-striped">
-                          <thead>
-                             <tr>
-                              <th> Id </th>
-                              <th> slider images </th>
-                              <th>Action </th>
-                            </tr>
-                            </thead>
-                            <tbody id="table-data">
-
-                            </tbody>
-                        </table>
-                      </div>
-
-      <!-- End menu table -->
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card" id="header-info-form">
+              <div class="card-body">
+                <h4 class="card-title">Add Header Information</h4>
+                <form class="forms-sample">
+                  <div class="form-group">
+                    <label for="mobile">Add Mobile Number</label>
+                    <input type="number" class="form-control" id="add-header-num" placeholder="Add slider image">
+                  </div>
+                  <div class="form-group">
+                    <label for="header-text">Add Header Text</label>
+                    <input type="text" class="form-control" id="add-header-text" placeholder="Add slider image">
+                  </div>
+                  <button type="submit" id="header-info-btn" class="btn btn-primary mr-2">Add</button>
+                  <button class="btn btn-light">Cancel</button>
+                </form>
+              </div>
             </div>
-          
-        <!-- end header menu -->
-    <!-- page-body-wrapper ends -->
+          </div>
+        </div>
 
-        
-  </div>
-  
-  <!-- container-scroller -->
+        <!-- show menu Table  -->
 
-  <!-- plugins:js -->
-  <script src="../../vendors/js/vendor.bundle.base.js"></script>
-  <!-- endinject -->
-  <!-- Plugin js for this page -->
-  <!-- <script src="../../vendors/chart.js/Chart.min.js"></script> -->
-  <script src="../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
-  <script src="../../vendors/progressbar.js/progressbar.min.js"></script>
 
-  <!-- End plugin js for this page -->
-  <!-- inject:js -->
-  <script src="../../js/off-canvas.js"></script>
-  <script src="../../js/hoverable-collapse.js"></script>
-  <script src="../../js/template.js"></script>
-  <script src="../../js/settings.js"></script>
-  <script src="../../js/todolist.js"></script>
-  <!-- endinject -->
-  <!-- Custom js for this page-->
-  <script src="../../js/jquery.cookie.js" type="text/javascript"></script>
-  <script src="../../js/dashboard.js"></script>
-  <script src="../../js/Chart.roundedBarCharts.js"></script>
-  <!-- End custom js for this page-->
-  
-  <!-- header js  -->
-  <script src="../../js/pages_js/pages.js"> </script>
-  <!-- end header js -->
-  
+        <div class="table-responsive mt-6">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th> Id </th>
+                <th> Mobile Number </th>
+                <th> Header Text </th>
+                <th> Action </th>
+              </tr>
+            </thead>
+            <tbody id="table-data">
+
+
+
+
+            </tbody>
+          </table>
+        </div>
+
+        <!-- End menu table -->
+      </div>
+
+      <!-- end header menu -->
+      <!-- Edit model -->
+
+
+      <div id="model">
+        <div id="model-form">
+
+          <h2>Edit Form</h2>
+
+
+          <!-- edit Form -->
+          <form class="forms-sample" id="edit-form">
+
+          </form>
+          <div id="close-btn">X</div>
+        </div>
+        <!-- end Edit model -->
+        <!-- page-body-wrapper ends -->
+
+
+      </div>
+
+      <!-- container-scroller -->
+
+      <!-- plugins:js -->
+      <script src="../../vendors/js/vendor.bundle.base.js"></script>
+      <!-- endinject -->
+      <!-- Plugin js for this page -->
+      <!-- <script src="../../vendors/chart.js/Chart.min.js"></script> -->
+      <script src="../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+      <script src="../../vendors/progressbar.js/progressbar.min.js"></script>
+
+      <!-- End plugin js for this page -->
+      <!-- inject:js -->
+      <script src="../../js/off-canvas.js"></script>
+      <script src="../../js/hoverable-collapse.js"></script>
+      <script src="../../js/template.js"></script>
+      <script src="../../js/settings.js"></script>
+      <script src="../../js/todolist.js"></script>
+      <!-- endinject -->
+      <!-- Custom js for this page-->
+      <script src="../../js/jquery.cookie.js" type="text/javascript"></script>
+      <script src="../../js/dashboard.js"></script>
+      <script src="../../js/Chart.roundedBarCharts.js"></script>
+      <!-- End custom js for this page-->
+
+      <!-- header js  -->
+      <script src="../../js/pages_js/header_info.js"> </script>
+      <script src="../../"> </script>
+      <!-- end header js -->
+
 </body>
 
 </html>

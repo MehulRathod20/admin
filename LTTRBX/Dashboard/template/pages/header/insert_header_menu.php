@@ -1,8 +1,6 @@
 <?php 
 
     include "../../../../Auth/config.php";
-
-    $sql = "INSERT INTO header_menu";
     $addmenu = $_POST['menu']; 
 
          if(!empty($addmenu)){

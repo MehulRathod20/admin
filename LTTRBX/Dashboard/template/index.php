@@ -287,6 +287,10 @@
   <script src="js/dashboard.js"></script>
   <script src="js/Chart.roundedBarCharts.js"></script>
   <!-- End custom js for this page-->
+  <!-- pages js  -->
+  <script src="../template/js/pages_js/pages.js"></script>
+  <script src="../template/js/pages_js/header_info.js"></script>
+  <!--  -->
 </body>
 
 </html>
