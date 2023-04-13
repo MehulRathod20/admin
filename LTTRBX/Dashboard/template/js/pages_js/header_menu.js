@@ -114,7 +114,7 @@ $(document).ready(function(){
     
     $(document).on("click",".delete", function(){
       var sid = $(this).data("id");
-      var element = this;
+      var elem = this;
       $.ajax({
         url:"delete_slider.php",
         type:"POST",
@@ -122,7 +122,7 @@ $(document).ready(function(){
         success:function(data){
           if (data == 1) {
             loadslider();
-            $(element).closest("tr").fadeOut();
+            $(elem).closest("tr").fadeOut();
           }
           else{              
           }            
