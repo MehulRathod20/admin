@@ -320,9 +320,9 @@
   <div id="model">
               <div id="model-form">
                 <h2>Edit Form</h2>
-                <table cellpadding="10px" width="100%">
-                  
-                </table>
+                <form class="forms-sample" id="edit-menu-form">
+
+                </form>
                 <div id="close-btn">X</div>
             </div>
           <!-- end Edit model -->

@@ -1,10 +1,11 @@
 <?php
 
-	include "../../../../Auth/config.php";
+include "../config.php";
         $id = $_POST['hid']; 
         $mob = $_POST['num'];
         $txt = $_POST['text'];
-        $sql = "UPDATE header_info SET phone = '{$mob}' , header_text = '{$txt}' WHERE id = '{$id}'";
+        $txt2 = $_POST['text2'];
+        $sql = "UPDATE header_info SET phone = '{$mob}' , header_text = '{$txt}', header_text_2 = '{$txt2}' WHERE id = '{$id}'";
         // $result = mysqli_query($conn,$sql) or die("SQL Query Failed");
         
         if(mysqli_query($conn, $sql)){

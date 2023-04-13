@@ -272,7 +272,7 @@
 
       <!-- Add Header Menu -->
 
-      <div class="container mt-5">
+      <div class="container mt-5 ">
         <div class="row">
           <div class="col-md-6">
             <div class="card" id="header-info-form">
@@ -281,14 +281,17 @@
                 <form class="forms-sample">
                   <div class="form-group">
                     <label for="mobile">Add Mobile Number</label>
-                    <input type="number" class="form-control" id="add-header-num" placeholder="Add slider image">
+                    <input type="number" class="form-control" id="add-header-num" placeholder="Add Mobile Number">
                   </div>
                   <div class="form-group">
                     <label for="header-text">Add Header Text</label>
-                    <input type="text" class="form-control" id="add-header-text" placeholder="Add slider image">
+                    <input type="text" class="form-control" id="add-header-text" placeholder="Add Header Text">
+                  </div>
+                  <div class="form-group">
+                    <label for="header-text-2">Add Header Text 2</label>
+                    <input type="text" class="form-control" id="add-header-text-2" placeholder="Add Header Text 2">
                   </div>
                   <button type="submit" id="header-info-btn" class="btn btn-primary mr-2">Add</button>
-                  <button class="btn btn-light">Cancel</button>
                 </form>
               </div>
             </div>
@@ -298,13 +301,14 @@
         <!-- show menu Table  -->
 
 
-        <div class="table-responsive mt-6">
+        <div class="table-responsive mt-5">
           <table class="table table-striped">
             <thead>
               <tr>
                 <th> Id </th>
                 <th> Mobile Number </th>
                 <th> Header Text </th>
+                <th> Header Text 2</th>
                 <th> Action </th>
               </tr>
             </thead>
@@ -366,10 +370,9 @@
       <script src="../../js/Chart.roundedBarCharts.js"></script>
       <!-- End custom js for this page-->
 
-      <!-- header js  -->
+      <!-- header info js  -->
       <script src="../../js/pages_js/header_info.js"> </script>
-      <script src="../../"> </script>
-      <!-- end header js -->
+      <!-- end header info js -->
 
 </body>
 

@@ -1,5 +1,5 @@
 <?php
-    include "../../../../Auth/config.php";
+    include "../config.php";
     
     $sql = "SELECT * FROM header_menu";
     $result = mysqli_query($conn, $sql) or die("SQL Query Failed");
@@ -11,8 +11,8 @@
                                 $output .="
                                 <tr><td>{$row['id']}</td><td>{$row['menu']}</td>
                                 <td>
-                                <button class='edit-btn' data-id='{$row['id']}'><i class='mdi mdi-lead-pencil'></i></button>
-                                 <button class='delete-btn' data-id='{$row['id']}'> <i class='mdi mdi-delete'></i></button></td></tr>";
+                                <button class='edit-btn btn-primary' data-id='{$row['id']}'><i class='mdi mdi-lead-pencil'></i></button>
+                                 <button class='delete-btn btn-danger' data-id='{$row['id']}'> <i class='mdi mdi-delete'></i></button></td></tr>";
                             }
                             
                         mysqli_close($conn);

@@ -1,6 +1,6 @@
 <?php
 $id = $_POST['id'];
-include "../../../../Auth/config.php";
+include "../config.php";
 $sql = "SELECT * FROM header_info where id = {$id}";
 $result = mysqli_query($conn, $sql) or die("SQL Query Failed");
 $output = "";
@@ -18,6 +18,10 @@ if (mysqli_num_rows($result) > 0) {
                                 <div class='form-group'>
                                     <label for='header-text'>Update Header Text</label>
                                     <input type='text' class='form-control' id='edit-htxt' value ='{$row['header_text']}'>
+                                </div>
+                                <div class='form-group'>
+                                    <label for='header-text'>Update Header Text 2</label>
+                                    <input type='text' class='form-control' id='edit-htxt2' value ='{$row['header_text_2']}'>
                                 </div>
                                     <button type='submit' id='save' class='btn btn-primary'>Update</button>";
     }

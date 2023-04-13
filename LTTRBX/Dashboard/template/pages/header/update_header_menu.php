@@ -1,6 +1,6 @@
 <?php
 
-include "../../../../Auth/config.php";
+include "../config.php";
 $menuid = $_POST['id'];
 $menu = $_POST['menu'];
 $sql = "UPDATE header_menu SET menu = '{$menu}' WHERE id = {$menuid}";

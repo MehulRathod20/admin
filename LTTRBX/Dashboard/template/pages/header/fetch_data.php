@@ -1,6 +1,6 @@
 <?php
         $menuid = $_POST['id'];
-            include "../../../../Auth/config.php";
+            include "../config.php";
         $sql = "SELECT * FROM header_menu where id = {$menuid}";
         $result = mysqli_query($conn, $sql) or die("SQL Query Failed");
         $output = "";
@@ -9,14 +9,13 @@
                     // $output = '';
                                 while ($row = mysqli_fetch_assoc($result)) {
                                     // code...
-                                    $output .="<tr>
-                                    <td>User Name</td>
-                                    <td><input type='text' id='edit-menu' value='{$row['menu']}'></td>
-                                    <td><input type='text' id='edit-id' hidden value='{$row['id']}'></td>
-                                </tr>
-                                <tr>
-                                    <td><button id='save'class='btn-primary mr-2'> Save</button> </td>
-                                </tr>";
+                                    $output .="
+                                    <div class='form-group'>
+                                        <label for='edit-Menu'>Edit Menu</label>
+                                        <input type='text' class='form-control' id='edit-menu' value='{$row['menu']}' placeholder='Edit Menu'>
+                                        <input type='text' id='edit-id' hidden value='{$row['id']}'>
+                                    </div>
+                                        <button type='submit' id='save' class='btn btn-primary mr-2'>Update</button>";
                                 }
                             
                             

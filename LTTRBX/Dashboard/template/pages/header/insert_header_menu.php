@@ -1,6 +1,6 @@
 <?php 
 
-    include "../../../../Auth/config.php";
+    include "../config.php";
     $addmenu = $_POST['menu']; 
 
          if(!empty($addmenu)){

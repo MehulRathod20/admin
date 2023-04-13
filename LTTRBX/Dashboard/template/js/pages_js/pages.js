@@ -66,7 +66,7 @@ $(document).ready(function(){
           type:"POST",
           data:{id : mid},
           success:function(data){
-            $("#model-form table").html(data);
+            $("#edit-menu-form").html(data);
           }
         });
 

@@ -19,10 +19,11 @@ $(document).ready(function(){
       // e.preventDefault();
      var num = $("#add-header-num").val();
      var txt = $("#add-header-text").val();
+     var tx = $("#add-header-text-2").val();
      $.ajax({
        url:"insert_Header_info.php",
        type: "POST",
-       data: {number : num , text : txt},
+       data: {number : num , text : txt, txt :tx},
        success: function(data){
          if (data == 1) {
            alert("Header Info Added.");
@@ -81,10 +82,11 @@ $(document).ready(function(){
       var id = $("#edit-id").val();
       var mob = $("#edit-hphone").val();
       var txt = $("#edit-htxt").val();
+      var txt2 = $("#edit-htxt2").val();
       $.ajax({
         url: "update_header_info.php",
         type:"POST",
-        data:{hid:id, num:mob, text : txt},
+        data:{hid:id, num:mob, text : txt,text2 : txt2 },
         success:function(data){
           if(data == 1){
           $("#model").hide();

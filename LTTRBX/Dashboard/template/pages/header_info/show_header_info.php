@@ -1,5 +1,5 @@
 <?php
-    include "../../../../Auth/config.php";
+    include "../config.php";
     
     $sql = "SELECT * FROM header_info";
     $result = mysqli_query($conn, $sql) or die("SQL Query Failed");
@@ -9,10 +9,10 @@
                             while ($row = mysqli_fetch_assoc($result)) {
                                 // code...
                                 $output .="
-                                <tr><td>{$row['id']}</td><td>{$row['phone']}</td><td>{$row['header_text']}</td>
+                                <tr><td>{$row['id']}</td><td>{$row['phone']}</td><td>{$row['header_text']}</td><td>{$row['header_text_2']}</td>
                                 <td>
-                                <button class='edit-btn' data-id='{$row['id']}'><i class='mdi mdi-lead-pencil'></i></button>
-                                 <button class='delete-btn' data-id='{$row['id']}'> <i class='mdi mdi-delete'></i></button></td></tr>";
+                                <button class='edit-btn btn-primary' data-id='{$row['id']}'><i class='mdi mdi-lead-pencil'></i></button>
+                                 <button class='delete-btn btn-danger' data-id='{$row['id']}'> <i class='mdi mdi-delete'></i></button></td></tr>";
                             }
                             
                         mysqli_close($conn);
