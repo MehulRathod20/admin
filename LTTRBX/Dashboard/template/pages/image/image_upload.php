@@ -304,7 +304,7 @@
                   </div>
                   <input type="file" name="new-image">
                   <img src="Dashboard/template/pages/upload/<?php echo $row['image']; ?>" class="img-fluid">
-                  <input type="" name="old-image" value="<?php echo $row['image']; ?>">
+                  <input type="hidden" name="old-image" value="<?php echo $row['image']; ?>">
                   <button class="btn btn-primary mt-3" name="update">update</button>
                 </form>
                 <?php
