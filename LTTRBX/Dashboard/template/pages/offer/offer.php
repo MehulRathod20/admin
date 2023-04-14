@@ -291,12 +291,12 @@
             <div class="card">
               <div class="card-body">
                 <h6>image</h6>
-                <form action="" method="POST" enctype="multipart/form-data">
+                <form action="add_offer_image.php" method="POST" enctype="multipart/form-data">
                   <div class="mb-2">
                     <input type="file" name="offer_img">
                   </div>
                   <div>
-                    <a href="#" class="btn btn-primary">save</a>
+                    <input type="submit" value="submit" class="btn btn-primary">
                   </div>
                 </form>
               </div>
@@ -307,25 +307,78 @@
         <div class="row">
           <div class="col-md-10">
             <div class="card">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">id</th>
-                    <th scope="col">image</th>
-                    <th scope="col">action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th>1</th>
-                    <td>Mark</td>
-                    <td>
-                      <a href="#" class="text-success fs-5 me-2"><i class="fa fa-pen-to-square"></i></a>
-                      <a href="#" class="text-danger fs-5"><i class="fa fa-trash"></i></a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+              <!--php code for offer-->
+              <?php
+              include "../config.php";
+
+              $sql = "SELECT * FROM offer";
+
+              $result = mysqli_query($conn, $sql);
+
+              if (mysqli_num_rows($result) > 0) {
+
+
+
+                ?>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">id</th>
+                      <th scope="col">image</th>
+                      <th scope="col">action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <?php
+                    while ($row = mysqli_fetch_assoc($result)) {
+                      ?>
+                      <tr>
+                        <th>
+                          <?php echo $row['id']; ?>
+                        </th>
+                        <td>
+                          <?php echo $row['image']; ?>
+                        </td>
+                        <td>
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="text-success fs-5 me-2"><i class="fa fa-pen-to-square"></i></a>
+                          <a href="delete_offer.php?id=<?php echo $row['id']; ?>" class="text-danger fs-5"><i
+                              class="fa fa-trash"></i></a>
+                        </td>
+                      </tr>
+                      <?php
+                    }
+                    ?>
+                  </tbody>
+                </table>
+                <?php
+              }
+              ?>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--modal-->
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">update</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="#">
+                  <label for="" class="form-label">image</label>
+                  <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
             </div>
           </div>
         </div>
