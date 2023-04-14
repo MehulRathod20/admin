@@ -208,7 +208,7 @@
 					<div class="card shadow mb-2">
 						<div class="card-body">
 							<h5>men's</h5>
-							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
+							<a href="#"><img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo"></a>
 						</div>
 					</div>
 				</div>
@@ -216,7 +216,7 @@
 					<div class="card shadow mb-2">
 						<div class="card-body">
 							<h5>men's</h5>
-							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
+							<a href="#"><img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo"></a>
 						</div>
 					</div>
 				</div>
@@ -224,7 +224,7 @@
 					<div class="card shadow mb-2">
 						<div class="card-body">
 							<h5>men's</h5>
-							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
+							<a href="#"><img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo"></a>
 						</div>
 					</div>
 				</div>
@@ -310,30 +310,6 @@
 			<div class="row">
 				<div class="col-mb-12">
 					<h3>offer</h3>
-				</div>
-				<div class="col-md-3">
-					<div class="card shadow mb-2">
-						<div class="card-body">
-							<h5>men's</h5>
-							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="card shadow mb-2">
-						<div class="card-body">
-							<h5>men's</h5>
-							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="card shadow mb-2">
-						<div class="card-body">
-							<h5>men's</h5>
-							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
-						</div>
-					</div>
 				</div>
 				<div class="col-md-3">
 					<div class="card shadow mb-2">

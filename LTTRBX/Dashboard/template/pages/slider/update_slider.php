@@ -302,13 +302,12 @@
 
         ?>
                 <form action="update_slider_image.php" method="POST" enctype="multipart/form-data" autocomplete="off">
-                <!-- <div class="form-group">
-                
-            </div>   -->
+                <div class="form-group">
+                <input type="hidden" name="id"  class="form-control" value="<?php echo $row['id'];?>" placeholder="">
+            </div>  
                 <div class="form-group">
                     <input type="file" name="new-image">
                   <img src="Dashboard/template/pages/upload/<?php echo $row['image']; ?>" class="img-fluid">
-                  <input type="hidden" name="id"  class="form-control" value="<?php echo $row['id'];?>" placeholder="">
                     <input type="" name="old-image" value="<?php echo $row['image']; ?>">
                   </div>
                   <input type="submit" name="submit" class="btn btn-primary" value="Update" />
