@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +13,7 @@
   <link rel="stylesheet" href="../../vendors/typicons/typicons.css">
   <link rel="stylesheet" href="../../vendors/simple-line-icons/css/simple-line-icons.css">
   <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
-	<link rel="stylesheet" type="text/css" href="../../../../assets/fontawesome/css/all.css">
+  <link rel="stylesheet" type="text/css" href="../../../../assets/fontawesome/css/all.css">
 
   <!-- endinject -->
   <!-- Plugin css for this page -->
@@ -29,6 +28,7 @@
   <link rel="stylesheet" href="../../css/pages/header_menu.css">
   <!-- end header css -->
 </head>
+
 <body>
   <div class="container-scroller">
     <!-- partial:partials/_navbar.php -->
@@ -48,7 +48,7 @@
           </a>
         </div>
       </div>
-      <div class="navbar-menu-wrapper d-flex align-items-top"> 
+      <div class="navbar-menu-wrapper d-flex align-items-top">
         <ul class="navbar-nav">
           <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
             <h1 class="welcome-text">Good Morning, <span class="text-black fw-bold">John Doe</span></h1>
@@ -57,9 +57,11 @@
         </ul>
         <ul class="navbar-nav ms-auto">
           <li class="nav-item dropdown d-none d-lg-block">
-            <a class="nav-link dropdown-bordered dropdown-toggle dropdown-toggle-split" id="messageDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false"> Select Category </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="messageDropdown">
-              <a class="dropdown-item py-3" >
+            <a class="nav-link dropdown-bordered dropdown-toggle dropdown-toggle-split" id="messageDropdown" href="#"
+              data-bs-toggle="dropdown" aria-expanded="false"> Select Category </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0"
+              aria-labelledby="messageDropdown">
+              <a class="dropdown-item py-3">
                 <p class="mb-0 font-weight-medium float-left">Select category</p>
               </a>
               <div class="dropdown-divider"></div>
@@ -107,7 +109,8 @@
             <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
               <i class="icon-mail icon-lg"></i>
             </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="notificationDropdown">
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0"
+              aria-labelledby="notificationDropdown">
               <a class="dropdown-item py-3 border-bottom">
                 <p class="mb-0 font-weight-medium float-left">You have 4 new notifications </p>
                 <span class="badge badge-pill badge-primary float-right">View all</span>
@@ -141,12 +144,14 @@
               </a>
             </div>
           </li>
-          <li class="nav-item dropdown"> 
-            <a class="nav-link count-indicator" id="countDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator" id="countDropdown" href="#" data-bs-toggle="dropdown"
+              aria-expanded="false">
               <i class="icon-bell"></i>
               <span class="count"></span>
             </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="countDropdown">
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0"
+              aria-labelledby="countDropdown">
               <a class="dropdown-item py-3">
                 <p class="mb-0 font-weight-medium float-left">You have 7 unread mails </p>
                 <span class="badge badge-pill badge-primary float-right">View all</span>
@@ -190,15 +195,20 @@
                 <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
                 <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
               </div>
-              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My Profile <span class="badge badge-pill badge-danger">1</span></a>
-              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i> Messages</a>
-              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i> Activity</a>
-              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i> FAQ</a>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My
+                Profile <span class="badge badge-pill badge-danger">1</span></a>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i>
+                Messages</a>
+              <a class="dropdown-item"><i
+                  class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i> Activity</a>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i>
+                FAQ</a>
               <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
             </div>
           </li>
         </ul>
-        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+          data-bs-toggle="offcanvas">
           <span class="mdi mdi-menu"></span>
         </button>
       </div>
@@ -211,8 +221,12 @@
         <div id="theme-settings" class="settings-panel">
           <i class="settings-close ti-close"></i>
           <p class="settings-heading">SIDEBAR SKINS</p>
-          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border me-3"></div>Light</div>
-          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border me-3"></div>Dark</div>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme">
+            <div class="img-ss rounded-circle bg-light border me-3"></div>Light
+          </div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme">
+            <div class="img-ss rounded-circle bg-dark border me-3"></div>Dark
+          </div>
           <p class="settings-heading mt-2">HEADER SKINS</p>
           <div class="color-tiles mx-0 px-4">
             <div class="tiles success"></div>
@@ -265,82 +279,111 @@
           </li>
         </ul>
       </nav>
-<!-- main-panel ends -->
+      <!-- main-panel ends -->
 
-<!--slider-->
-<div class="container mt-5">
-  <!--slider form row1-->
-  <div class="row">
-    <div class="col-md-5">
-      <div class="card">
-        <div class="card-body">
-          <p id="error"></p>
-          <form action="add_slider_image.php" method="POST" enctype="multipart/form-data">
-          <div class="form-group">
-                    <input type="hidden" name="id"  class="form-control" value="" placeholder="">
+      <!--slider-->
+      <div class="container mt-5">
+        <!--slider form row1-->
+        <div class="row">
+          <div class="col-md-5">
+            <div class="card">
+              <div class="card-body">
+                <p id="error"></p>
+                <form action="add_slider_image.php" method="POST" enctype="multipart/form-data">
+                  <div class="form-group">
+                    <input type="hidden" name="id" class="form-control" value="" placeholder="">
                   </div>
-          <div class="mb-3">
-            <input type="file" id="image" name="fileslide" aria-describedby="">
+                  <div class="mb-3">
+                    <input type="file" id="image" name="fileslide" aria-describedby="">
+                  </div>
+                  <div class="mb-3">
+                    <input type="submit" value="upload" class="btn btn-primary" id="submit" name="" aria-describedby="">
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
-          <div class="mb-3">
-            <input type="submit" value="upload" class="btn btn-primary" id="submit" name="" aria-describedby="">
+        </div>
+        <!--slider table row2-->
+        <div class="row mt-5">
+          <div class="col-md-10">
+            <!--php code for slider -->
+            <?php
+
+            include "../config.php";
+
+            $sql = "SELECT * FROM slider";
+
+            $result = mysqli_query($conn, $sql);
+
+            if (mysqli_num_rows($result)) {
+
+
+              ?>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">image</th>
+                    <th scope="col">action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <?php
+                  while($row = mysqli_fetch_assoc($result)) {
+                    ?>
+                    <tr>
+                     <td><?php echo $row['id']?></td>
+                      <td><?php echo $row['image']?></td>
+                      <td>
+                        <a href="update_slider.php?id=<?php echo $row['id'];?>" class="fs-5 me-2 text-success"><i class="fa fa-pen-to-square"></i></a>
+                        <a href="delete_slider.php?id=<?php echo $row['id'];?>" class="fs-5 text-danger"><i class="fa fa-trash"></i></a>
+                      </td>
+                    </tr>
+                    <?php
+                  }
+                  ?>
+                </tbody>
+              </table>
+              <?php
+              }
+              ?>
           </div>
-        </form>
         </div>
       </div>
-    </div>
-  </div>
-  <!--slider table row2-->
-  <div class="row mt-5">
-    <div class="col-md-10">
-      <!--php code for slider -->
-    <table class="table shadow" >
-      <thead>
-        <tr>
-          <th scope='col'>id</th>
-          <th scope='col'>image</th>
-          <th scope='col'>action</th>
-        </tr>
-      </thead>
-      <tbody id="table_data">
-
-      </tbody>
-      </table>
-    </div>
-  </div>
-</div>
 
 
-  
-   
-  
-  <!-- plugins:js -->
-  <script src="../../vendors/js/vendor.bundle.base.js"></script>
-  <!-- endinject -->
-  <!-- Plugin js for this page -->
-  <!-- <script src="../../vendors/chart.js/Chart.min.js"></script> -->
-  <script src="../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
-  <script src="../../vendors/progressbar.js/progressbar.min.js"></script>
 
-  <!-- End plugin js for this page -->
-  <!-- inject:js -->
-  <script src="../../js/off-canvas.js"></script>
-  <script src="../../js/hoverable-collapse.js"></script>
-  <script src="../../js/template.js"></script>
-  <script src="../../js/settings.js"></script>
-  <script src="../../js/todolist.js"></script>
-  <!-- endinject -->
-  <!-- Custom js for this page-->
-  <script src="../../js/jquery.cookie.js" type="text/javascript"></script>
-  <script src="../../js/dashboard.js"></script>
-  <script src="../../js/Chart.roundedBarCharts.js"></script>
-  <!-- End custom js for this page-->
-  
-  <!-- header js  -->
-  <script src="../../js/pages_js/header_menu.js"> </script>
-	<script src="assets/js/javascript.js"></script>
 
-  <!-- end header js -->
-  
+
+      <!-- plugins:js -->
+      <script src="../../vendors/js/vendor.bundle.base.js"></script>
+      <!-- endinject -->
+      <!-- Plugin js for this page -->
+      <!-- <script src="../../vendors/chart.js/Chart.min.js"></script> -->
+      <script src="../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+      <script src="../../vendors/progressbar.js/progressbar.min.js"></script>
+
+      <!-- End plugin js for this page -->
+      <!-- inject:js -->
+      <script src="../../js/off-canvas.js"></script>
+      <script src="../../js/hoverable-collapse.js"></script>
+      <script src="../../js/template.js"></script>
+      <script src="../../js/settings.js"></script>
+      <script src="../../js/todolist.js"></script>
+      <!-- endinject -->
+      <!-- Custom js for this page-->
+      <script src="../../js/jquery.cookie.js" type="text/javascript"></script>
+      <script src="../../js/dashboard.js"></script>
+      <script src="../../js/Chart.roundedBarCharts.js"></script>
+      <!-- End custom js for this page-->
+
+      <!-- header js  -->
+      <script src="../../js/pages_js/header_menu.js"> </script>
+      <script src="assets/js/javascript.js"></script>
+
+      <!-- end header js -->
+
 </body>
+
 </html>

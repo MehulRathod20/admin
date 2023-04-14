@@ -1,15 +1,16 @@
-<?php 
-	
-	$id = $_POST['aid'];
-	include "../../../../Auth/config.php";
+<?php
 
-	$sql = "DELETE FROM slider WHERE id = {$id}";
-	// $result = mysqli_query($conn,$sql) or die("SQL Query Failed");
-	if(mysqli_query($conn, $sql)){
-		echo 1;
-	}
-	else{
+$id = $_GET['id'];
 
-		echo 0;
-	}
+include '../config.php';
+
+    $sql = "DELETE FROM slider WHERE id = {$id}";
+
+    $result = mysqli_query($conn, $sql) or die("query unsuccessful");
+
+            header("Location:http://localhost/project/LTTRBX/Dashboard/template/pages/slider/slider.php");
+
+
+    mysqli_close($conn);
+
 ?>

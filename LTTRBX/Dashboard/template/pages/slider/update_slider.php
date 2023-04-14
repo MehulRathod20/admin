@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="../../vendors/typicons/typicons.css">
   <link rel="stylesheet" href="../../vendors/simple-line-icons/css/simple-line-icons.css">
   <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
-	<link rel="stylesheet" type="text/css" href="../../../../assets/fontawesome/css/all.css">
+  <link rel="stylesheet" type="text/css" href="../../../../assets/fontawesome/css/all.css">
 
   <!-- endinject -->
   <!-- Plugin css for this page -->
@@ -25,7 +25,7 @@
   <!-- endinject -->
   <link rel="shortcut icon" href="../../images/favicon.png" />
   <!-- header css -->
-  <link rel="stylesheet" href="../../css/pages/pages.css">
+  <link rel="stylesheet" href="../../css/pages/header_menu.css">
   <!-- end header css -->
 </head>
 
@@ -270,77 +270,62 @@
             </a>
             <div class="collapse" id="setting">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../header/header_menu.php">Header</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../image/image_upload.php">image</a></li>
-                <li class="nav-item"> <a class="nav-link" href="slider.php">Slider</a></li>
+                <li class="nav-item"> <a class="nav-link" href="header_menu.php">Header</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/samples/login.php">image</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../slider/slider.php">Slider</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../../pages/samples/login.php">Footer</a></li>
               </ul>
             </div>
           </li>
-
         </ul>
       </nav>
       <!-- main-panel ends -->
 
-      <!-- Add Header Menu -->
-      <div class="container mt-5 ">
+      <!--slider-->
+      <div class="container mt-5">
+        <!--slider form row1-->
         <div class="row">
-          <div class="col-md-6">
-            <div class="card" id="header-info-form">
+          <div class="col-md-5">
+            <div class="card">
               <div class="card-body">
-                <h4 class="card-title">Add Header Information</h4>
-                <form class="forms-sample">
-                  <div class="form-group">
-                    <label for="mobile">Add Mobile Number</label>
-                    <input type="number" class="form-control" id="add-header-num" placeholder="Add Mobile Number">
+                <p id="error"></p>
+                <?php
+        include "../config.php";
+         
+        $id =$_GET['id'];
+
+        $sql = "SELECT slider.id,slider.image  FROM slider where id = {$id}";
+        
+        $result = mysqli_query($conn,$sql) or die("query failed.");
+            if(mysqli_num_rows($result) > 0){
+                while($row = mysqli_fetch_assoc($result)){
+
+        ?>
+                <form action="update_slider_image.php" method="POST" enctype="multipart/form-data" autocomplete="off">
+                <!-- <div class="form-group">
+                
+            </div>   -->
+                <div class="form-group">
+                    <input type="file" name="new-image">
+                  <img src="Dashboard/template/pages/upload/<?php echo $row['image']; ?>" class="img-fluid">
+                  <input type="hidden" name="id"  class="form-control" value="<?php echo $row['id'];?>" placeholder="">
+                    <input type="" name="old-image" value="<?php echo $row['image']; ?>">
                   </div>
-                  <div class="form-group">
-                    <label for="header-text">Add Header Text</label>
-                    <input type="text" class="form-control" id="add-header-text" placeholder="Add Header Text">
-                  </div>
-                  <div class="form-group">
-                    <label for="header-text-2">Add Header Text 2</label>
-                    <input type="text" class="form-control" id="add-header-text-2" placeholder="Add Header Text 2">
-                  </div>
-                  <button type="submit" id="header-info-btn" class="btn btn-primary mr-2">Add</button>
+                  <input type="submit" name="submit" class="btn btn-primary" value="Update" />
                 </form>
+                <?php
+                }
+              }       
+              ?>
               </div>
             </div>
           </div>
         </div>
-        
-        <!-- show menu Table  -->
-        <div class="table-responsive mt-5">
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th>Id </th>
-                <th>Mobile Number </th>
-                <th>Header Text </th>
-                <th>Header Text 2</th>
-                <th>Action </th>
-              </tr>
-            </thead>
-            <tbody id="table-data">
-
-            </tbody>
-          </table>
-        </div>
-      </div>
-      
-      <!-- Edit model -->
-      <div id="model">
-        <div id="model-form">
-          <h2>Edit Form</h2>
-          <!-- edit Form -->
-          <form class="forms-sample" id="edit-form">
-
-          </form>
-          <div id="close-btn">X</div>
-        </div>
       </div>
 
-    
+
+
+
 
       <!-- plugins:js -->
       <script src="../../vendors/js/vendor.bundle.base.js"></script>
@@ -364,9 +349,11 @@
       <script src="../../js/Chart.roundedBarCharts.js"></script>
       <!-- End custom js for this page-->
 
-      <!-- header info js  -->
-      <script src="../../js/pages_js/header_info.js"> </script>
-      <!-- end header info js -->
+      <!-- header js  -->
+      <script src="../../js/pages_js/header_menu.js"> </script>
+      <script src="assets/js/javascript.js"></script>
+
+      <!-- end header js -->
 
 </body>
 

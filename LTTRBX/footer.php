@@ -28,18 +28,23 @@
 				?>
 			</div>
 			<div class="row">
+				<?phP
+				include "config.php";
+
+				$sql="SELECT * FROM header_menu";
+
+				$result=mysqli_query($conn,$sql);
+
+				if(mysqli_num_rows($result) > 0){
+					while($row=mysqli_fetch_assoc($result)){
+				?>
 				<div class="col-md-1">
-					<h6>category</h6>
+					<a href="#" class="text-dark text-decoration-none"><h6><?php echo $row['menu'];?></h6></a>
 				</div>
-				<div class="col-md-1">
-					<h6>category</h6>
-				</div>
-				<div class="col-md-1">
-					<h6>category</h6>
-				</div>
-				<div class="col-md-1">
-					<h6>category</h6>
-				</div>
+				<?php
+				}
+			}
+				?>
 			</div>
 		</div>
 	</section>

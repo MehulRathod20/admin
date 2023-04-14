@@ -23,32 +23,38 @@
 	<?php
 	include "config.php";
 
-	$sql="SELECT * FROM header_info";
+	$sql = "SELECT * FROM header_info";
 
-	$result=mysqli_query($conn,$sql);
+	$result = mysqli_query($conn, $sql);
 
-	if(mysqli_num_rows($result)){
-		 
-		while($row=mysqli_fetch_assoc($result)){
-	?>
-	<section class="nav-section">
-		<div class="container">
-			<div class="row">
-				<div class="d-flex justify-content-between">
-					<div class="nav-phone">
-						<small><i class="fa fa-phone"></i> <?php echo $row['phone'];?></small>
-					</div>
-					<div>
-						<small><?php echo $row['header_text'];?><span class="ms-3">|<?php echo $row['other_text'];?></span></small>
-					</div>
-					<div>
-						<small>eng <i class="fa fa-light fa-chevron-down"></i></small>
+	if (mysqli_num_rows($result)) {
+
+		while ($row = mysqli_fetch_assoc($result)) {
+			?>
+			<section class="nav-section">
+				<div class="container">
+					<div class="row">
+						<div class="d-flex justify-content-between">
+							<div class="nav-phone">
+								<small><i class="fa fa-phone"></i>
+									<?php echo $row['phone']; ?>
+								</small>
+							</div>
+							<div>
+								<small>
+									<?php echo $row['header_text']; ?><span class="ms-3">|
+										<?php echo $row['header_text_2']; ?>
+									</span>
+								</small>
+							</div>
+							<div>
+								<small>eng <i class="fa fa-light fa-chevron-down"></i></small>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</section>
-	<?php
+			</section>
+			<?php
 		}
 	}
 	?>
@@ -128,7 +134,9 @@
 										<?php
 									}
 									?>
+
 								</ul>
+
 
 								<?php
 							}
@@ -150,7 +158,7 @@
 	</section>
 
 	<!--main swiper-->
-	<section class="slider mb-5">
+	<section class="slider mb-4">
 		<div class="container-fluid">
 			<!-- Swiper -->
 
@@ -175,7 +183,7 @@
 						while ($row = mysqli_fetch_assoc($result)) {
 							?>
 							<div class="swiper-slide">
-								<img src="Dashboard/template/pages/upload/<?php echo $row['image']; ?>" class="">
+								<img src="Dashboard/template/pages/upload/<?php echo $row['image']; ?>" class="" alt="demo">
 							</div>
 							<?php
 						}
@@ -189,97 +197,106 @@
 			</div>
 	</section>
 
-	<!--product page start-->
-	<section class="product my-4" id="">
+	<!--category  start-->
+	<section class="category mb-5">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3">
-					<h2 class="">Products For You<h2>
-							<div>
-								<select class="form-select" aria-label="Default select example">
-									<option selected><small class="text-muted">sort by:</small>relevance</option>
-									<option value="1">One</option>
-									<option value="2">Two</option>
-									<option value="3">Three</option>
-								</select>
-							</div>
-							<div class="row mt-2">
-								<div class="col-md-12">
-									<div class="filter">
-										<h5>filter</h5>
-										<div class="my-3">
-											<select class="form-select" aria-label="Default select example">
-												<option selected>category</option>
-												<option value="1">One</option>
-												<option value="2">Two</option>
-												<option value="3">Three</option>
-											</select>
-										</div>
-										<div class="my-3">
-											<select class="form-select" aria-label="Default select example">
-												<option selected>category</option>
-												<option value="1"></option>
-												<option value="2">Two</option>
-												<option value="3">Three</option>
-											</select>
-										</div>
-									</div>
-								</div>
-							</div>
+				<div class="col-mb-12">
+					<h3>category</h3>
 				</div>
-				<div class="col-md-9">
-					<div class="row">
-						<div class="col-md-3">
-							<div class="card">
-								<img src="https://images.meesho.com/images/products/195488385/5yjty_400.webp" class="img-fluid"
-									alt="...">
-								<div class="card-body">
-									<p class="d-flex justify-content-end mb-2">+3more</p>
-									<h6 class="mb-2 text-muted">Realme 6 cases & covers</h6>
-									<h5 class="fw-bold mb-2">212<small class="text-muted"> onwards</small></h5>
-									<small class="mb-5">free delivery</small>
-									<p class="rating">4.0 <i class="fa-sharp fa-solid fa-star"></i></p>
-								</div>
-							</div>
+				<div class="col-md-2">
+					<div class="card shadow mb-2">
+						<div class="card-body">
+							<h5>men's</h5>
+							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
 						</div>
-						<div class="col-md-3">
-							<div class="card">
-								<img src="https://images.meesho.com/images/products/195488385/5yjty_400.webp" class="img-fluid"
-									alt="...">
-								<div class="card-body">
-									<p class="d-flex justify-content-end mb-2">+3more</p>
-									<h6 class="mb-2 text-muted">Realme 6 cases & covers</h6>
-									<h5 class="fw-bold mb-2">212<small class="text-muted"> onwards</small></h5>
-									<small class="mb-5">free delivery</small>
-									<p class="rating">4.0 <i class="fa-sharp fa-solid fa-star"></i></p>
-								</div>
-							</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card shadow mb-2">
+						<div class="card-body">
+							<h5>men's</h5>
+							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
 						</div>
-						<div class="col-md-3">
-							<div class="card">
-								<img src="https://images.meesho.com/images/products/195488385/5yjty_400.webp" class="img-fluid"
-									alt="...">
-								<div class="card-body">
-									<p class="d-flex justify-content-end mb-2">+3more</p>
-									<h6 class="mb-2 text-muted">Realme 6 cases & covers</h6>
-									<h5 class="fw-bold mb-2">212<small class="text-muted"> onwards</small></h5>
-									<small class="mb-5">free delivery</small>
-									<p class="rating">4.0 <i class="fa-sharp fa-solid fa-star"></i></p>
-								</div>
-							</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card shadow mb-2">
+						<div class="card-body">
+							<h5>men's</h5>
+							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
 						</div>
-						<div class="col-md-3">
-							<div class="card">
-								<img src="https://images.meesho.com/images/products/195488385/5yjty_400.webp" class="img-fluid"
-									alt="...">
-								<div class="card-body">
-									<p class="d-flex justify-content-end mb-2">+3more</p>
-									<h6 class="mb-2 text-muted">Realme 6 cases & covers</h6>
-									<h5 class="fw-bold mb-2">212<small class="text-muted"> onwards</small></h5>
-									<small class="mb-5">free delivery</small>
-									<p class="rating">4.0 <i class="fa-sharp fa-solid fa-star"></i></p>
-								</div>
-							</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card shadow mb-2">
+						<div class="card-body">
+							<h5>men's</h5>
+							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card shadow mb-2">
+						<div class="card-body">
+							<h5>men's</h5>
+							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card shadow mb-2">
+						<div class="card-body">
+							<h5>men's</h5>
+							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card shadow mb-2">
+						<div class="card-body">
+							<h5>men's</h5>
+							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card shadow mb-2">
+						<div class="card-body">
+							<h5>men's</h5>
+							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card shadow mb-2">
+						<div class="card-body">
+							<h5>men's</h5>
+							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card shadow mb-2">
+						<div class="card-body">
+							<h5>men's</h5>
+							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card shadow mb-2">
+						<div class="card-body">
+							<h5>men's</h5>
+							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card shadow mb-2">
+						<div class="card-body">
+							<h5>men's</h5>
+							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
 						</div>
 					</div>
 				</div>
@@ -287,7 +304,50 @@
 		</div>
 	</section>
 
-	<?php
+	<!--offer start-->
+	<section class="category mb-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-mb-12">
+					<h3>offer</h3>
+				</div>
+				<div class="col-md-3">
+					<div class="card shadow mb-2">
+						<div class="card-body">
+							<h5>men's</h5>
+							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card shadow mb-2">
+						<div class="card-body">
+							<h5>men's</h5>
+							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card shadow mb-2">
+						<div class="card-body">
+							<h5>men's</h5>
+							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card shadow mb-2">
+						<div class="card-body">
+							<h5>men's</h5>
+							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+   
 
+	<?php
 	include "footer.php";
 	?>

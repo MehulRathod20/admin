@@ -11,8 +11,8 @@
                                 $output .="
                                 <tr><td>{$row['id']}</td><td>{$row['phone']}</td><td>{$row['header_text']}</td><td>{$row['header_text_2']}</td>
                                 <td>
-                                <button class='edit-btn btn-primary' data-id='{$row['id']}'><i class='mdi mdi-lead-pencil'></i></button>
-                                 <button class='delete-btn btn-danger' data-id='{$row['id']}'> <i class='mdi mdi-delete'></i></button></td></tr>";
+                                <a class='edit-btn text-success fs-5' data-id='{$row['id']}'><i class='fa fa-pen-to-square'></i></a>
+                                <a class='delete-btn text-danger fs-5' data-id='{$row['id']}'> <i class='mdi mdi-delete'></i></a></td></tr>";
                             }
                             
                         mysqli_close($conn);
