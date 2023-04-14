@@ -241,6 +241,7 @@
               </ul>
             </div>
           </li>
+          <!-- Settings -->
           <li class="nav-item nav-category">Setting</li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#setting" aria-expanded="false" aria-controls="setting">
@@ -250,13 +251,30 @@
             </a>
             <div class="collapse" id="setting">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/header/header_menu.php">Header</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/header/header_menu.php">Heade</a></li>
                 <li class="nav-item"> <a class="nav-link" href="pages/image/image_upload.php">image</a></li>
                 <li class="nav-item"> <a class="nav-link" href="pages/slider/slider.php">Slider</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.php">Footer</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/image/image_upload.php">Footer</a></li>
               </ul>
             </div>
           </li>
+          <!-- end Setting -->
+            <!-- Product -->
+            <li class="nav-item nav-category">Producs</li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#producs" aria-expanded="false" aria-controls="producs">
+              <i class="menu-icon mdi mdi-account-circle-outline"></i>
+              <span class="menu-title">Producs</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="producs">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/categories/categories.php">Category</a></li>
+              </ul>
+            </div>
+          </li>
+            <!-- end Product -->
+          
 
         </ul>
       </nav>

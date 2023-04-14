@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,10 +24,9 @@
   <!-- endinject -->
   <link rel="shortcut icon" href="../../images/favicon.png" />
   <!-- header css -->
-  <link rel="stylesheet" href="../../css/pages/header_menu.css">
+  <link rel="stylesheet" href="../../css/pages/pages.css">
   <!-- end header css -->
 </head>
-
 <body>
   <div class="container-scroller">
     <!-- partial:partials/_navbar.php -->
@@ -46,7 +46,7 @@
           </a>
         </div>
       </div>
-      <div class="navbar-menu-wrapper d-flex align-items-top">
+      <div class="navbar-menu-wrapper d-flex align-items-top"> 
         <ul class="navbar-nav">
           <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
             <h1 class="welcome-text">Good Morning, <span class="text-black fw-bold">John Doe</span></h1>
@@ -55,11 +55,9 @@
         </ul>
         <ul class="navbar-nav ms-auto">
           <li class="nav-item dropdown d-none d-lg-block">
-            <a class="nav-link dropdown-bordered dropdown-toggle dropdown-toggle-split" id="messageDropdown" href="#"
-              data-bs-toggle="dropdown" aria-expanded="false"> Select Category </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0"
-              aria-labelledby="messageDropdown">
-              <a class="dropdown-item py-3">
+            <a class="nav-link dropdown-bordered dropdown-toggle dropdown-toggle-split" id="messageDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false"> Select Category </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="messageDropdown">
+              <a class="dropdown-item py-3" >
                 <p class="mb-0 font-weight-medium float-left">Select category</p>
               </a>
               <div class="dropdown-divider"></div>
@@ -107,8 +105,7 @@
             <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
               <i class="icon-mail icon-lg"></i>
             </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0"
-              aria-labelledby="notificationDropdown">
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="notificationDropdown">
               <a class="dropdown-item py-3 border-bottom">
                 <p class="mb-0 font-weight-medium float-left">You have 4 new notifications </p>
                 <span class="badge badge-pill badge-primary float-right">View all</span>
@@ -142,14 +139,12 @@
               </a>
             </div>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link count-indicator" id="countDropdown" href="#" data-bs-toggle="dropdown"
-              aria-expanded="false">
+          <li class="nav-item dropdown"> 
+            <a class="nav-link count-indicator" id="countDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="icon-bell"></i>
               <span class="count"></span>
             </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0"
-              aria-labelledby="countDropdown">
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="countDropdown">
               <a class="dropdown-item py-3">
                 <p class="mb-0 font-weight-medium float-left">You have 7 unread mails </p>
                 <span class="badge badge-pill badge-primary float-right">View all</span>
@@ -193,20 +188,15 @@
                 <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
                 <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
               </div>
-              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My
-                Profile <span class="badge badge-pill badge-danger">1</span></a>
-              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i>
-                Messages</a>
-              <a class="dropdown-item"><i
-                  class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i> Activity</a>
-              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i>
-                FAQ</a>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My Profile <span class="badge badge-pill badge-danger">1</span></a>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i> Messages</a>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i> Activity</a>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i> FAQ</a>
               <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
             </div>
           </li>
         </ul>
-        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
-          data-bs-toggle="offcanvas">
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
           <span class="mdi mdi-menu"></span>
         </button>
       </div>
@@ -219,12 +209,8 @@
         <div id="theme-settings" class="settings-panel">
           <i class="settings-close ti-close"></i>
           <p class="settings-heading">SIDEBAR SKINS</p>
-          <div class="sidebar-bg-options selected" id="sidebar-light-theme">
-            <div class="img-ss rounded-circle bg-light border me-3"></div>Light
-          </div>
-          <div class="sidebar-bg-options" id="sidebar-dark-theme">
-            <div class="img-ss rounded-circle bg-dark border me-3"></div>Dark
-          </div>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border me-3"></div>Light</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border me-3"></div>Dark</div>
           <p class="settings-heading mt-2">HEADER SKINS</p>
           <div class="color-tiles mx-0 px-4">
             <div class="tiles success"></div>
@@ -268,12 +254,11 @@
             </a>
             <div class="collapse" id="setting">
               <ul class="nav flex-column sub-menu">
-                
               <li class="nav-item"> <a class="nav-link" href="../header_info/header_info.php">Header Info</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../header/header_menu.php">Header</a></li>
-                <li class="nav-item"> <a class="nav-link" href="image/update_image.php">image</a></li>
+                <li class="nav-item"> <a class="nav-link" href="header_menu.php">Header</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../image/image_upload.php">image</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../slider/slider.php">Slider</a></li>
-                <li class="nav-item"> <a class="nav-link" href="image/image_upload.php">Footer</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../image/image_upload.php">Footer</a></li>
               </ul>
             </div>
           </li>
@@ -282,105 +267,99 @@
       </nav>
       <!-- main-panel ends -->
 
-      <!--upload header image -->
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-12 col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h3>header update</h3>
-                <?php
-                include "../config.php";
+         <!-- Add Header Menu -->
+            
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card" id="add-categories-form">
+                            <div class="card-body">
+                                <h4 class="card-title">Add Main Categories</h4>
+                                <form class="forms-sample" >
+                                <div class="form-group">
+                                        <label for="categories">Add Sub Categories</label>
+                                        <select class="form-control" id="select"> 
 
-                $sql="SELECT * FROM logo_image";
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="categories">Add Sub Categories</label>
+                                        <input type="text" class="form-control" id="add-sub-categories" placeholder="Add Sub Categories">
+                                    </div>
+                                        <button type="submit" id="submit" class="btn btn-primary mr-2">Add</button>                
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                $result=mysqli_query($conn,$sql);
+               <!-- show menu Table  -->
 
-                if(mysqli_num_rows($result)){
-                  while($row=mysqli_fetch_assoc($result)){
-                ?>
-                <form action="update_image.php" method="POST" enctype="multipart/form-data">
-                  <div class="form-group">
-                    <input type="hidden" name="id" class="form-control" value="<?php echo $row['id']; ?>"
-                      placeholder="">
-                  </div>
-                  <input type="file" name="new-image">
-                  <img src="Dashboard/template/pages/upload/<?php echo $row['image']; ?>" class="img-fluid">
-                  <input type="hidden" name="old-image" value="<?php echo $row['image']; ?>">
-                  <button class="btn btn-primary mt-3" name="update">update</button>
-                </form>
-                <?php
-                  }
-                }
-                ?>
-              </div>
+            
+                      <div class="table-responsive mt-6">
+                        <table class="table table-striped">
+                          <thead>
+                             <tr>
+                              <th> Id </th>
+                              <th> Categories </th>
+                              <th>Sub Categories</th>
+                              <th>Action </th>
+                            </tr>
+                            </thead>
+                            <tbody id="table-data">
+                            
+                            </tbody>
+                        </table>
+                      </div>
+
+      <!-- End menu table -->
             </div>
-          </div>
+          
+        <!-- end header menu -->
+    <!-- page-body-wrapper ends -->
 
-          <!--upload footer image -->
-          <div class="col-12 col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h3>footer update</h3>
-                <?php
-                include "../config.php";
+        
+  </div>
+  
+  <!-- container-scroller -->
 
-                $sql="SELECT * FROM footer_image";
+  <!-- Edit model -->
+  <div id="model">
+              <div id="model-form">
+                <h2>Edit Form</h2>
+                <form class="forms-sample" id="edit-sub-categories-form">
 
-                $result=mysqli_query($conn,$sql);
-
-                if(mysqli_num_rows($result)){
-                  while($row=mysqli_fetch_assoc($result)){
-                ?>
-                <form action="footer_update_image.php" method="POST" enctype="multipart/form-data">
-                  <div class="form-group">
-                    <input type="hidden" name="id" class="form-control" value="<?php echo $row['id']; ?>"
-                      placeholder="">
-                  </div>
-                  <input type="file" name="new-image">
-                  <img src="Dashboard/template/pages/upload/<?php echo $row['image']; ?>" class="img-fluid">
-                  <input type="hidden" name="old-image" value="<?php echo $row['image']; ?>">
-                  <button class="btn btn-primary mt-3" name="update">update</button>
                 </form>
-                <?php
-                  } 
-                }
-                ?>
-              </div>
+                <div id="close-btn">X</div>
             </div>
-          </div>
-        </div>
-      </div>
+          <!-- end Edit model -->
 
+  <!-- plugins:js -->
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <!-- <script src="../../vendors/chart.js/Chart.min.js"></script> -->
+  <script src="../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="../../vendors/progressbar.js/progressbar.min.js"></script>
 
-
-
-      <!-- plugins:js -->
-      <script src="../../vendors/js/vendor.bundle.base.js"></script>
-      <!-- endinject -->
-      <!-- Plugin js for this page -->
-      <!-- <script src="../../vendors/chart.js/Chart.min.js"></script> -->
-      <script src="../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
-      <script src="../../vendors/progressbar.js/progressbar.min.js"></script>
-
-      <!-- End plugin js for this page -->
-      <!-- inject:js -->
-      <script src="../../js/off-canvas.js"></script>
-      <script src="../../js/hoverable-collapse.js"></script>
-      <script src="../../js/template.js"></script>
-      <script src="../../js/settings.js"></script>
-      <script src="../../js/todolist.js"></script>
-      <!-- endinject -->
-      <!-- Custom js for this page-->
-      <script src="../../js/jquery.cookie.js" type="text/javascript"></script>
-      <script src="../../js/dashboard.js"></script>
-      <script src="../../js/Chart.roundedBarCharts.js"></script>
-      <!-- End custom js for this page-->
-
-      <!-- header js  -->
-      <script src="../../js/pages_js/header_menu.js"> </script>
-      <!-- end header js -->
-
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+  <script src="../../js/settings.js"></script>
+  <script src="../../js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="../../js/jquery.cookie.js" type="text/javascript"></script>
+  <script src="../../js/dashboard.js"></script>
+  <script src="../../js/Chart.roundedBarCharts.js"></script>
+  <!-- End custom js for this page-->
+  
+  <!-- header js  -->
+  <script src="../../js/pages_js/categories.js"> </script>
+  <!-- end header js -->
+  
 </body>
 
 </html>

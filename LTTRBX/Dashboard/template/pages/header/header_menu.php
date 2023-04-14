@@ -258,7 +258,7 @@
                 <li class="nav-item"> <a class="nav-link" href="header_menu.php">Header</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../image/image_upload.php">image</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../slider/slider.php">Slider</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/samples/login.php">Footer</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../image/image_upload.php">Footer</a></li>
               </ul>
             </div>
           </li>

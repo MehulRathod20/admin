@@ -39,7 +39,7 @@
 						<small><i class="fa fa-phone"></i> <?php echo $row['phone'];?></small>
 					</div>
 					<div>
-						<small><?php echo $row['header_text'];?><span class="ms-3">|<?php echo $row['other_text'];?></span></small>
+						<small><?php echo $row['header_text'];?><span class="ms-3">| <span class="ms-3"><?php echo $row['header_text_2'];?></span></small>
 					</div>
 					<div>
 						<small>eng <i class="fa fa-light fa-chevron-down"></i></small>
