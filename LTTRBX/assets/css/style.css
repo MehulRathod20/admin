@@ -110,12 +110,12 @@ input.form-control:hover{
   margin-top: 0.5rem;
 
 }
-/* .card .card-body p i{
+.card .card-body p i{
   font-size:10px;
-} */
+}
 .filter{
   width: auto;
-  height:auto;
+  height: auto;
   border:2px solid var(--lb-light-grey);
   padding: 2px;
 
