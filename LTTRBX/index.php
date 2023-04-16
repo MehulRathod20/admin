@@ -198,7 +198,7 @@
 	</section>
 
 	<!--category  start-->
-	<section class="category mb-5">
+	<section class="category mb-3">
 		<div class="container">
 			<div class="row">
 				<div class="col-mb-12">
@@ -206,147 +206,67 @@
 				</div>
 				<div class="col-md-2">
 					<div class="card shadow mb-2">
-						<div class="card-body">
-							<h5>men's</h5>
-							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="card shadow mb-2">
-						<div class="card-body">
-							<h5>men's</h5>
-							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="card shadow mb-2">
-						<div class="card-body">
-							<h5>men's</h5>
-							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="card shadow mb-2">
-						<div class="card-body">
-							<h5>men's</h5>
-							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="card shadow mb-2">
-						<div class="card-body">
-							<h5>men's</h5>
-							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="card shadow mb-2">
-						<div class="card-body">
-							<h5>men's</h5>
-							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="card shadow mb-2">
-						<div class="card-body">
-							<h5>men's</h5>
-							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="card shadow mb-2">
-						<div class="card-body">
-							<h5>men's</h5>
-							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="card shadow mb-2">
-						<div class="card-body">
-							<h5>men's</h5>
-							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="card shadow mb-2">
-						<div class="card-body">
-							<h5>men's</h5>
-							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="card shadow mb-2">
-						<div class="card-body">
-							<h5>men's</h5>
-							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="card shadow mb-2">
-						<div class="card-body">
-							<h5>men's</h5>
-							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
-						</div>
+						<h5>men's</h5>
+						<a href="#"><img
+								src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667"
+								class="img-fluid" alt="demo"></a>
 					</div>
 				</div>
 			</div>
+		</div>
 		</div>
 	</section>
 
 	<!--offer start-->
-	<section class="category mb-5">
-		<div class="container">
+	<section class="category mb-3">
+		<div class="container-fluid">
 			<div class="row">
-				<div class="col-mb-12">
-					<h3>offer</h3>
-				</div>
-				<div class="col-md-3">
-					<div class="card shadow mb-2">
-						<div class="card-body">
-							<h5>men's</h5>
-							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
+				<!--php code for offer-->
+				<?php
+				include "config.php";
+
+				$sql = "SELECT * FROM offer";
+
+				$result = mysqli_query($conn, $sql);
+
+				if (mysqli_num_rows($result) > 0) {
+
+					while ($row = mysqli_fetch_assoc($result)) {
+
+						?>
+						<div class="col-md-4">
+							<div class="card mb-2" height="100px">
+								<img src="Dashboard/template/pages/upload/<?php echo $row['image']; ?>" class="#" alt="demo" width="auto"
+									height="230px">
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="card shadow mb-2">
-						<div class="card-body">
-							<h5>men's</h5>
-							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="card shadow mb-2">
-						<div class="card-body">
-							<h5>men's</h5>
-							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="card shadow mb-2">
-						<div class="card-body">
-							<h5>men's</h5>
-							<img src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667" class="img-fluid" alt="demo">
-						</div>
-					</div>
-				</div>
+						<?php
+					}
+				}
+				?>
 			</div>
 		</div>
 	</section>
-   
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 	<?php
 	include "footer.php";
