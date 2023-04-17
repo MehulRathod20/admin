@@ -268,11 +268,11 @@
             </a>
             <div class="collapse" id="setting">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../header/header_menu.php">Header</a></li>
-                <li class="nav-item"> <a class="nav-link" href="image_upload.php">image</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../header_info/header_info.php">Header Info</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../header/header_menu.php">Header</a></li>
-                <li class="nav-item"> <a class="nav-link" href="image/update_image.php">image</a></li>
+                <li class="nav-item"> <a class="nav-link" href="image_upload.php">image</a></li>
+                <!-- <li class="nav-item"> <a class="nav-link" href="../header/header_menu.php">Header</a></li>
+                <li class="nav-item"> <a class="nav-link" href="image/update_image.php">image</a></li> -->
                 <li class="nav-item"> <a class="nav-link" href="../slider/slider.php">Slider</a></li>
                 <li class="nav-item"> <a class="nav-link" href="image/image_upload.php">Footer</a></li>
               </ul>
@@ -293,24 +293,24 @@
                 <?php
                 include "../config.php";
 
-                $sql="SELECT * FROM logo_image";
+                $sql = "SELECT * FROM logo_image";
 
-                $result=mysqli_query($conn,$sql);
+                $result = mysqli_query($conn, $sql);
 
-                if(mysqli_num_rows($result)){
-                  while($row=mysqli_fetch_assoc($result)){
-                ?>
-                <form action="update_image.php" method="POST" enctype="multipart/form-data">
-                  <div class="form-group">
-                    <input type="hidden" name="id" class="form-control" value="<?php echo $row['id']; ?>"
-                      placeholder="">
-                  </div>
-                  <input type="file" name="new-image">
-                  <img src="Dashboard/template/pages/upload/<?php echo $row['image']; ?>" class="img-fluid">
-                  <input type="hidden" name="old-image" value="<?php echo $row['image']; ?>">
-                  <button class="btn btn-primary mt-3" name="update">update</button>
-                </form>
-                <?php
+                if (mysqli_num_rows($result)) {
+                  while ($row = mysqli_fetch_assoc($result)) {
+                    ?>
+                    <form action="update_image.php" method="POST" enctype="multipart/form-data">
+                      <div class="form-group">
+                        <input type="hidden" name="id" class="form-control" value="<?php echo $row['id']; ?>"
+                          placeholder="">
+                      </div>
+                      <input type="file" name="new-image">
+                      <img src="Dashboard/template/pages/upload/<?php echo $row['image']; ?>" class="img-fluid">
+                      <input type="hidden" name="old-image" value="<?php echo $row['image']; ?>">
+                      <button class="btn btn-primary mt-3" name="update">update</button>
+                    </form>
+                    <?php
                   }
                 }
                 ?>
@@ -326,25 +326,25 @@
                 <?php
                 include "../config.php";
 
-                $sql="SELECT * FROM footer_image";
+                $sql = "SELECT * FROM footer_image";
 
-                $result=mysqli_query($conn,$sql);
+                $result = mysqli_query($conn, $sql);
 
-                if(mysqli_num_rows($result)){
-                  while($row=mysqli_fetch_assoc($result)){
-                ?>
-                <form action="footer_update_image.php" method="POST" enctype="multipart/form-data">
-                  <div class="form-group">
-                    <input type="hidden" name="id" class="form-control" value="<?php echo $row['id']; ?>"
-                      placeholder="">
-                  </div>
-                  <input type="file" name="new-image">
-                  <img src="Dashboard/template/pages/upload/<?php echo $row['image']; ?>" class="img-fluid">
-                  <input type="hidden" name="old-image" value="<?php echo $row['image']; ?>">
-                  <button class="btn btn-primary mt-3" name="update">update</button>
-                </form>
-                <?php
-                  } 
+                if (mysqli_num_rows($result)) {
+                  while ($row = mysqli_fetch_assoc($result)) {
+                    ?>
+                    <form action="footer_update_image.php" method="POST" enctype="multipart/form-data">
+                      <div class="form-group">
+                        <input type="hidden" name="id" class="form-control" value="<?php echo $row['id']; ?>"
+                          placeholder="">
+                      </div>
+                      <input type="file" name="new-image">
+                      <img src="Dashboard/template/pages/upload/<?php echo $row['image']; ?>" class="img-fluid">
+                      <input type="hidden" name="old-image" value="<?php echo $row['image']; ?>">
+                      <button class="btn btn-primary mt-3" name="update">update</button>
+                    </form>
+                    <?php
+                  }
                 }
                 ?>
               </div>
