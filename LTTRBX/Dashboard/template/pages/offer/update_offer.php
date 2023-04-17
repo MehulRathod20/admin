@@ -292,7 +292,7 @@
               </ul>
             </div>
           </li>
-          <!-- end Product -->
+          <!-- end Product -->  
         </ul>
       </nav>
       <!-- main-panel ends -->
