@@ -4,7 +4,7 @@ include "../header.php";
 
 <div class="container mt-5">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-7">
       <div class="card shadow">
         <div class="card-body">
           <div class="register-head mb-5">
@@ -12,7 +12,7 @@ include "../header.php";
           </div>
           <form action="savedata.php" method="POST">
             <div class="row">
-              <div class="col-md-7 mb-3">
+              <div class="col-md-6 mb-3">
                 <label for="First Name" class="form-label">First Name *</label>
                 <input type="text" class="form-control" name="fname" id="" aria-describedby="Fname"
                   placeholder="Enter Your Name">
