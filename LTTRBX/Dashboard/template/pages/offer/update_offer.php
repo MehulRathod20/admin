@@ -13,20 +13,19 @@
   <link rel="stylesheet" href="../../vendors/typicons/typicons.css">
   <link rel="stylesheet" href="../../vendors/simple-line-icons/css/simple-line-icons.css">
   <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" type="text/css" href="../../../../assets/fontawesome/css/all.css">
+
   <!-- endinject -->
   <!-- Plugin css for this page -->
   <link rel="stylesheet" href="../../vendors/datatables.net-bs4/dataTables.bootstrap4.css">
   <link rel="stylesheet" href="../../js/select.dataTables.min.css">
-  <link rel="stylesheet" type="text/css" href="../../../../assets/fontawesome/css/all.css">
-
-
   <!-- End plugin css for this page -->
   <!-- inject:css -->
   <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="../../images/favicon.png" />
   <!-- header css -->
-  <link rel="stylesheet" href="../../css/pages/pages.css">
+  <link rel="stylesheet" href="../../css/pages/header_menu.css">
   <!-- end header css -->
 </head>
 
@@ -271,16 +270,15 @@
             </a>
             <div class="collapse" id="setting">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../header_info/header_info.php">Header Info</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../header/header_menu.php">Header</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../image/image_upload.php">image</a></li>
+                <li class="nav-item"> <a class="nav-link" href="header_menu.php">Header</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/samples/login.php">image</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../slider/slider.php">Slider</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../image/image_upload.php">Footer</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/samples/login.php">Footer</a></li>
               </ul>
             </div>
           </li>
-          <!-- Product -->
-          <li class="nav-item nav-category">Product</li>
+           <!-- Product -->
+           <li class="nav-item nav-category">Product</li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#product" aria-expanded="false" aria-controls="product">
               <i class="fa fa-box-open"></i>
@@ -299,105 +297,50 @@
       </nav>
       <!-- main-panel ends -->
 
-      <!--offer image add-->
+      <!--slider-->
       <div class="container mt-5">
-        <div class="row mb-5">
+        <!--slider form row1-->
+        <div class="row">
           <div class="col-md-5">
             <div class="card">
               <div class="card-body">
-                <h6>image</h6>
-                <form action="add_offer_image.php" method="POST" enctype="multipart/form-data">
-                  <div class="mb-2">
-                    <input type="file" name="offer_img">
-                  </div>
-                  <div>
-                    <input type="submit" value="submit" class="btn btn-primary">
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--offer image table-->
-        <div class="row">
-          <div class="col-md-10">
-            <div class="card">
-              <!--php code for offer-->
-              <?php
-              include "../config.php";
-
-              $sql = "SELECT * FROM offer";
-
-              $result = mysqli_query($conn, $sql);
-
-              if (mysqli_num_rows($result) > 0) {
-
-
-
-                ?>
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">id</th>
-                      <th scope="col">image</th>
-                      <th scope="col">action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <?php
-                    while ($row = mysqli_fetch_assoc($result)) {
-                      ?>
-                      <tr>
-                        <th>
-                          <?php echo $row['id']; ?>
-                        </th>
-                        <td>
-                          <?php echo $row['image']; ?>
-                        </td>
-                        <td>
-                          <a href="update_offer.php?id=<?php echo $row['id']; ?>"
-                            class="text-success fs-5 me-2"><i class="fa fa-pen-to-square"></i></a>
-                          <a href="update_offer.php?id=<?php echo $row['id']; ?>" class="text-danger fs-5"><i
-                              class="fa fa-trash"></i></a>
-                        </td>
-                      </tr>
-                      <?php
-                    }
-                    ?>
-                  </tbody>
-                </table>
+                <p id="error"></p>
                 <?php
-              }
+        include "../config.php";
+         
+        $id =$_GET['id'];
+
+        $sql = "SELECT offer.id,offer.image  FROM offer WHERE id = {$id}";
+        
+        $result = mysqli_query($conn,$sql) or die("query failed.");
+            if(mysqli_num_rows($result) > 0){
+                while($row = mysqli_fetch_assoc($result)){
+
+        ?>
+                <form action="update_offer_image.php" method="POST" enctype="multipart/form-data" autocomplete="off">
+                <div class="form-group">
+                <input type="hidden" name="id"  class="form-control" value="<?php echo $row['id'];?>" placeholder="">
+            </div>  
+                <div class="form-group">
+                    <input type="file" name="new-image">
+                  <img src="Dashboard/template/pages/upload/<?php echo $row['image']; ?>" class="img-fluid">
+                    <input type="hidden" name="old-image" value="<?php echo $row['image']; ?>">
+                  </div>
+                  <input type="submit" name="submit" class="btn btn-primary" value="Update" />
+                </form>
+                <?php
+                }
+              }       
               ?>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!--modal-->
 
-      <!-- Modal -->
-      <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">update</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="#">
-                  <label for="" class="form-label">image</label>
-                  <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
-        </div>
-      </div> -->
+
+
 
       <!-- plugins:js -->
       <script src="../../vendors/js/vendor.bundle.base.js"></script>
@@ -422,7 +365,9 @@
       <!-- End custom js for this page-->
 
       <!-- header js  -->
-      <script src="../../js/pages_js/categories.js"> </script>
+      <script src="../../js/pages_js/header_menu.js"> </script>
+      <script src="assets/js/javascript.js"></script>
+
       <!-- end header js -->
 
 </body>
