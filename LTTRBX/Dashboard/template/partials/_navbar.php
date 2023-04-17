@@ -7,7 +7,7 @@
         </div>
         <div>
           <a class="navbar-brand brand-logo" href="index.html">
-            <img src="images/logo.svg" alt="logo" />
+            <img src="https://www.lttrbxtech.com/public/images/media/1647090757Dark_png.png" alt="logo" />
           </a>
           <a class="navbar-brand brand-logo-mini" href="index.html">
             <img src="images/logo-mini.svg" alt="logo" />
