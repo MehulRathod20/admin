@@ -1,5 +1,5 @@
-	<!--footer section-->
-	<section class="footer mt-5">
+<!--footer section-->
+<section class="footer mt-5">
 		<div class="container">
 			<div class="row">
 				<!-- start php code for logo image-->
