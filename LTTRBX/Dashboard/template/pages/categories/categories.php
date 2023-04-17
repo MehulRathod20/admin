@@ -262,6 +262,22 @@
               </ul>
             </div>
           </li>
+          <!-- Product -->
+          <li class="nav-item nav-category">Product</li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#product" aria-expanded="false" aria-controls="product">
+              <i class="fa fa-box-open"></i>
+              <span class="menu-title ms-4">Product</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="product">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="categories.php">Category</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../offer/offer.php">Offer</a></li>
+              </ul>
+            </div>
+          </li>
+          <!-- end Product -->
 
         </ul>
       </nav>
