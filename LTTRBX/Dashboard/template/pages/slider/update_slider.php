@@ -294,7 +294,7 @@
          
         $id =$_GET['id'];
 
-        $sql = "SELECT slider.id,slider.image  FROM slider where id = {$id}";
+        $sql = "SELECT slider.id,slider.image  FROM slider WHERE id = {$id}";
         
         $result = mysqli_query($conn,$sql) or die("query failed.");
             if(mysqli_num_rows($result) > 0){

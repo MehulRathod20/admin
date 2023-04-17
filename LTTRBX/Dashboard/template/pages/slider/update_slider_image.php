@@ -32,7 +32,7 @@ if(empty($_FILES['new-image']['name'])){
 
 }
 
- $sql ="UPDATE `slider` SET `image`='{$file_name}' WHERE id = {$id}";
+ $sql ="UPDATE `slider` SET `image`='{$file_name}' WHERE id = {$_POST["id"]}";
  
  $result=mysqli_query($conn,$sql);
  if($result){
