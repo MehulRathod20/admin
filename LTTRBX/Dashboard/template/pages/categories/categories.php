@@ -262,10 +262,10 @@
               </ul>
             </div>
           </li>
-
-        </ul>
+         
       </nav>
       <!-- main-panel ends -->
+       
 
          <!-- Add Header Menu -->
             
