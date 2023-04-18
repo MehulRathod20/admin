@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>Product</title>
 
 	<!--css-->
 	<link rel="stylesheet" type="text/css" href="../../assets/plugin/bootstrap/bootstrap.min.css">
@@ -21,7 +21,7 @@
 
 	<!--php code for header info-->
 	<?php
-	include "../../config.php";
+	include "config.php";
 
 	$sql = "SELECT * FROM header_info";
 
@@ -69,7 +69,7 @@
 						<!-- start php code for logo image-->
 						<?php
 
-						include "../../config.php";
+						include "config.php";
 
 						$sql = "SELECT * FROM logo_image";
 
@@ -78,7 +78,7 @@
 						if (mysqli_num_rows($result) > 0) {
 							?>
 
-							<a class="navbar-logo" href="#">
+							<a class="navbar-logo" href="../../index.php">
 
 								<!-- start php code for logo image-->
 								<?php
@@ -106,7 +106,7 @@
 
 							<?php
 
-							include "../../config.php";
+							include "config.php";
 
 							$sql = "SELECT * FROM header_menu";
 
@@ -249,7 +249,7 @@
 								<div class="col-md-3">
 									<div class="card">
 										<div class="card-body">
-											<img src="Dashboard/template/pages/upload/<?php echo $row['image'];?>" class="img-fluid" alt="demo">
+											<img src="../../Dashboard/template/pages/upload/<?php echo $row['image'];?>" class="img-fluid" alt="demo">
 											<!-- <p class="d-flex justify-content-end mb-2">+3more</p> -->
 											<h6 class="mb-2 text-muted">
 												<?php echo $row['name'] ?>

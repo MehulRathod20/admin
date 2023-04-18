@@ -64,12 +64,14 @@ if(isset($_POST['login'])){
 		    <label for="Password1" class="form-label">Password</label>
 		    <input type="password" class="form-control" id="Password" name="password" >
 		  </div>
-
+		  <div class="my-2 font-weight-light">
+		  <a href="#" class="text-decoration-none">Forget Password</a> 
+		  </div>
 		  <button type="submit" class="btn btn-primary" name="login">Login</button>
 		  <div class="text-center mt-4 font-weight-light">
                  Create new account <a href="registration.php" class="text-decoration-none">Register</a>
                 </div>
-            <div class="text-center mt-4 font-weight-light">
+            <div class="text-center mt-2 font-weight-light">
 				<a href="#" class="text-decoration-none">Term & Condition</a>   
 				<a href="#" class="text-decoration-none">Privecy Policy</a>
 			</div>

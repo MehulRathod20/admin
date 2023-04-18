@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>Home</title>
 
 	<!--css-->
 	<link rel="stylesheet" type="text/css" href="assets/plugin/bootstrap/bootstrap.min.css">
@@ -86,7 +86,7 @@
 								while ($row = mysqli_fetch_assoc($result)) {
 
 									?>
-									<img src="Dashboard/template/pages/upload/<?php echo $row['image']; ?>" class="" alt="demo" width="150px"
+									<img src="Dashboard/template/pages/upload/<?php echo $row['image']; ?>" class="" alt="logo" width="150px"
 										height="50px">
 
 									<?php
@@ -207,7 +207,7 @@
 				<div class="col-md-2">
 					<div class="card shadow mb-2">
 						<h5>men's</h5>
-						<a href="#"><img
+						<a href="pages/product/man_product.php"><img
 								src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-15906-20349-WINE_7.jpg?v=1663339667"
 								class="img-fluid" alt="demo"></a>
 					</div>

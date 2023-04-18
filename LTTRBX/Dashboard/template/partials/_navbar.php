@@ -6,10 +6,10 @@
           </button>
         </div>
         <div>
-          <a class="navbar-brand brand-logo" href="index.html">
+          <a class="navbar-brand brand-logo" href="index.php">
             <img src="https://www.lttrbxtech.com/public/images/media/1647090757Dark_png.png" alt="logo" />
           </a>
-          <a class="navbar-brand brand-logo-mini" href="index.html">
+          <a class="navbar-brand brand-logo-mini" href="index.php">
             <img src="images/logo-mini.svg" alt="logo" />
           </a>
         </div>
