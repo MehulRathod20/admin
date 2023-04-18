@@ -26,6 +26,7 @@
   border: none;
   border-radius:11px;
   padding: 30px 10px 10px 10px;
+  background-color: ghostwhite;
 }
 /*info-section*/
 .nav-section{
@@ -51,11 +52,11 @@
 input.form-control{
  border: none;
  border-bottom: 1.5px solid;
- background-color: var(--lb-light-grey);
+ /* background-color: var(--lb-light-grey); */
 }
 input.form-control:hover{
   border: 1px solid var(--lb-black);
-  background-color: var(--lb-light-grey);
+  /* background-color: var(--lb-light-grey); */
  }
 .account a{
  text-decoration: none;

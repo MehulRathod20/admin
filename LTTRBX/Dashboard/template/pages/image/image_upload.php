@@ -290,6 +290,7 @@
             <div class="collapse" id="product">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="../categories/categories.php">Category</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../product/product.php">Product</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../offer/offer.php">Offer</a></li>
               </ul>
             </div>
@@ -323,7 +324,7 @@
                           placeholder="">
                       </div>
                       <input type="file" name="new-image">
-                      <img src="Dashboard/template/pages/upload/<?php echo $row['image']; ?>" class="img-fluid">
+                      <img src="Dashboard/template/pages/upload/<?php echo $row['image'];?>" class="img-fluid">
                       <input type="hidden" name="old-image" value="<?php echo $row['image']; ?>">
                       <button class="btn btn-primary mt-3" name="update">update</button>
                     </form>

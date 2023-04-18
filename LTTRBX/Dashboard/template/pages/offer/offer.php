@@ -290,6 +290,7 @@
             <div class="collapse" id="product">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="../categories/categories.php">Category</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../product/product.php">Product</a></li>
                 <li class="nav-item"> <a class="nav-link" href="offer.php">Offer</a></li>
               </ul>
             </div>
