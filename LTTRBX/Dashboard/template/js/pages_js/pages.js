@@ -14,25 +14,47 @@ $(document).ready(function(){
     loadTable();
     // end show
 
-  // insert Menu / Add Menu
-  $("#submit").on("click",function(e){
-         // e.preventDefault();
-        var add = $("#add-new-menu").val();
-        $.ajax({
-          url:"insert_header_menu.php",
+
+    $("#form-add").on("submit", function(e) {
+      e.preventDefault();
+
+      var formdata = new FormData(this);
+      $("#form-add").trigger("reset");
+
+      $.ajax({
+
+          url: "insert_header_menu.php",
           type: "POST",
-          data: {menu:add},
-          success: function(data){
-            if (data == 1) {
-              alert("Menu Added");
-            }
-            else{
-                // $("#error-message").html("Can't Add Menu or Sub Menu.").slideDown();
-              alert("Can't Add Menu or Sub Menu.");
+          data: formdata,
+          contentType: false,
+          processData: false,
+          success: function(data) {
+
+            loadTable();
           }
-            }
-        });
       });
+     
+  });
+
+  // // insert Menu / Add Menu
+  // $("#submit").on("click",function(e){
+  //        // e.preventDefault();
+  //       var add = $("#add-new-menu").val();
+  //       $.ajax({
+  //         url:"insert_header_menu.php",
+  //         type: "POST",
+  //         data: {menu:add},
+  //         success: function(data){
+  //           if (data == 1) {
+  //             alert("Menu Added");
+  //           }
+  //           else{
+  //               // $("#error-message").html("Can't Add Menu or Sub Menu.").slideDown();
+  //             alert("Can't Add Menu or Sub Menu.");
+  //         }
+  //           }
+  //       });
+  //     });
 
       // Delete header menu 
       $(document).on("click",".delete-btn", function(){

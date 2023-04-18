@@ -9,7 +9,7 @@
                             while ($row = mysqli_fetch_assoc($result)) {
                                 // code...
                                 $output .="
-                                <tr><td>{$row['id']}</td><td>{$row['menu']}</td>
+                                <tr><td>{$row['id']}</td><td>{$row['menu']}</td><td> <img src='../upload/$row[image]'  width = '200px'  height = '70px'></td>
                                 <td>
                                 <a class='edit-btn text-success fs-5 me-2' data-id='{$row['id']}'><i class='fa fa-pen-to-square'></i></a>
                                  <a class='delete-btn text-danger fs-5' data-id='{$row['id']}'> <i class='mdi mdi-delete'></i></a></td></tr>";

@@ -296,11 +296,16 @@
                         <div class="card" id="add-menu-form">
                             <div class="card-body">
                                 <h4 class="card-title">Add New Menu</h4>
-                                <form class="forms-sample" >
+                                <form class="forms-sample" id="form-add">
                                     <div class="form-group">
                                         <label for="Menu">Add Menu</label>
-                                        <input type="text" class="form-control" id="add-new-menu" placeholder="Add Menu">
+                                        <input type="text" class="form-control" id="add-new-menu" name="menu" placeholder="Add Menu">
                                     </div>
+                                    <div class="form-group">
+                                        <label for="Menu-image">Add Menu Image</label>
+                                        <input type="file" class="form-control" id="add-menu-img" name="img">
+                                    </div>
+                                    
                                         <button type="submit" id="submit" class="btn btn-primary mr-2">Add</button>                
                                 </form>
                             </div>
@@ -317,6 +322,7 @@
                              <tr>
                               <th> Id </th>
                               <th> Menu </th>
+                              <th> Image </th>
                               <th>Action </th>
                             </tr>
                             </thead>

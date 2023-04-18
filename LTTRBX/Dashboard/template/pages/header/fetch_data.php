@@ -15,6 +15,11 @@
                                         <input type='text' class='form-control' id='edit-menu' value='{$row['menu']}' placeholder='Edit Menu'>
                                         <input type='text' id='edit-id' hidden value='{$row['id']}'>
                                     </div>
+                                    <div class='form-group'>
+                                            <input type='file' name='new-image'>
+                                        <img src='../upload/{$row['image']}' class='img-fluid'>
+                                            <input type='' name='old-image' value='{$row['image']}'>
+                                        </div>
                                         <button type='submit' id='save' class='btn btn-primary mr-2'>Update</button>";
                                 }
                             
