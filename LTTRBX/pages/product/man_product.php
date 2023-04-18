@@ -253,15 +253,15 @@
 										
 											<!-- <p class="d-flex justify-content-end mb-2">+3more</p> -->
 											<h6 class="mb-1 text-muted">
-												<?php echo $row['name'] ?>
+												<?php echo $row['name'];?>
 											</h6>
-											<p class="text-muted">
-												<?php echo $row['price'] ?>
-												<h5 class="fw-bold mb-1">
+											<p class="text-muted"><i class="fa fa-indian-rupee-sign"></i>
+												<?php echo $row['price'];?>
+												<small class="fw-bold fs-5 mb-1"><i class="fa fa-indian-rupee-sign fs-5"></i>
 													<?php echo $row['sprice'] ?> 
-												</p>
+												</small>
 											</small>
-											<small class="mb-1">free delivery</small>
+											<p class="mb-1">free delivery</p>
 											<p class="rating">4.0 <i class="fa-sharp fa-solid fa-star"></i></p>
 										</div>
 									</div>
