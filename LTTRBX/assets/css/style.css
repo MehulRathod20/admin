@@ -107,7 +107,7 @@ input.form-control:hover{
 .card .card-body p.rating{
   background-color: var(--lb-main-color);
   color: var(--lb-white);
-  width: 50px;
+  width:70px;
   text-align: center;
   border-radius: 11px;
   padding: 2px 3px;
