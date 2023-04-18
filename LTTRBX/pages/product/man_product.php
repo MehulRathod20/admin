@@ -248,19 +248,20 @@
 								?>
 								<div class="col-md-3">
 									<div class="card">
+											<img src="../../Dashboard/template/pages/upload/<?php echo $row['image'];?>" class="#" alt="demo" height="200px" width="auto">
 										<div class="card-body">
-											<img src="../../Dashboard/template/pages/upload/<?php echo $row['image'];?>" class="img-fluid" alt="demo">
+										
 											<!-- <p class="d-flex justify-content-end mb-2">+3more</p> -->
-											<h6 class="mb-2 text-muted">
+											<h6 class="mb-1 text-muted">
 												<?php echo $row['name'] ?>
 											</h6>
-											<small class="text-muted">
+											<p class="text-muted">
 												<?php echo $row['price'] ?>
-												<h5 class="fw-bold mb-2">
+												<h5 class="fw-bold mb-1">
 													<?php echo $row['sprice'] ?> 
-												</h5>
+												</p>
 											</small>
-											<small class="mb-5">free delivery</small>
+											<small class="mb-1">free delivery</small>
 											<p class="rating">4.0 <i class="fa-sharp fa-solid fa-star"></i></p>
 										</div>
 									</div>
