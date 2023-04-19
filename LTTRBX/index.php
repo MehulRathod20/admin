@@ -198,49 +198,37 @@
 	</section>
 
 	<!--category  start-->
-	<section class="category mb-3">
-		<div class="container">
-			<!--php code for slider-->
+	<?php
+	include "config.php";
+  
+	 $sql="SELECT * FROM header_menu";
+
+	 $result=mysqli_query($conn,$sql);
+
+	 if(mysqli_num_rows($result) > 0){
+
+	?>
+	<div class="container mt-5 mb-5">
+		<div class="row">
 			<?php
-
-			include "config.php";
-
-			$sql = "SELECT * FROM header_menu";
-
-			$result = mysqli_query($conn, $sql);
-
-			if (mysqli_num_rows($result)) {
-
-				?>
-				<div class="row">
-					<div class="col-mb-12">
-						<h3>category</h3>
-					</div>
-					<!--php code for slider-->
-					<?php
-
-					while ($row = mysqli_fetch_assoc($result)) {
-						?>
-						<div class="col-md-2">
-							<div class="card shadow mb-2">
-								<h5>
-									<?php echo $row['menu']; ?>
-								</h5>
-								<a href="pages/product/man_product.php"><img
-										src="Dashboard/template/pages/upload/<?php echo $row['image'];?>" height="200px" width="150px" alt="men_image"></a>
-							</div>
-						</div>
-						<?php
-					}
-					?>
+			while($row=mysqli_fetch_assoc($result)){
+			?>
+			<div class="col-md-3">
+				<div class="card">
+					<h4><?php echo $row['menu'];?></h4>
+					<a href="pages/product/man_product.php">
+					<img src="Dashboard/template/pages/upload/<?php echo $row['image'];?>" class="img-top" alt="category_img">
+			</a>
 				</div>
 			</div>
 			<?php
 			}
 			?>
 		</div>
-	</section>
-
+	</div>
+	<?php
+	 }
+	?>
 	<!--offer start-->
 	<section class="category mb-3">
 		<div class="container-fluid">

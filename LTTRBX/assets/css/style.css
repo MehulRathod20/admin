@@ -99,6 +99,11 @@ input.form-control:hover{
   height:500px;
   line-height: 500px;
 }
+/*category*/
+.img-top{
+  width:243px;
+  height:250px;
+}
 
 /*product*/
 .product .card{

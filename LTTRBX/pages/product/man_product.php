@@ -164,52 +164,104 @@
 					<div class="row mt-2">
 						<div class="col-md-12">
 							<div class="filter">
-								<div class="checkbox" id="check">
-									<ul>
-										<li><input type="radio" id="gender" name="gender">
-											<label for="" class="fs-6">Man</label>
-										</li>
-										<li><input type="radio" id="gender" name="gender">
-											<label for="" class="fs-6">Female</label>
-										</li>
-										<li><input type="radio" id="gender" name="gender">
-											<label for="" class="fs-6">Kinds</label>
-										</li>
-									</ul>
-								</div>
+								<!--php code start for category-->
+								<?php
+								include "config.php";
+
+								$sql = "SELECT * FROM header_menu";
+
+								$result = mysqli_query($conn, $sql);
+
+								if (mysqli_num_rows($result) > 0) {
+
+									?>
+
+									<div class="radiobox" id="radio">
+										<?php
+										while ($row = mysqli_fetch_assoc($result)) {
+											?>
+											<ul>
+												<li><input type="radio" id="gender" name="gender">
+													<label for="" class="fs-6">
+														<?php echo $row['menu']; ?>
+													</label>
+												</li>
+
+											</ul>
+											<?php
+										}
+										?>
+									</div>
+									<?php
+								}
+								?>
 							</div>
+
+
 							<div class="filter">
 								<h5>Categories</h5>
 								<div class="checkbox" id="check">
-									<ul>
-										<li><input type="checkbox" id="check">
-											<label for="" class="fs-6">shirt</label>
-										</li>
-										<li><input type="checkbox" id="check">
-											<label for="" class="fs-6">shirt</label>
-										</li>
-										<li><input type="checkbox" id="check">
-											<label for="" class="fs-6">shirt</label>
-										</li>
-									</ul>
+									<!--php code start for category-->
+									<?php
+									include "config.php";
+
+									$sql = "SELECT product.id , product.name FROM product";
+
+									$result = mysqli_query($conn, $sql);
+
+									if (mysqli_num_rows($result) > 0) {
+
+										?>
+										<ul>
+											<?php
+											while ($row = mysqli_fetch_assoc($result)) {
+												?>
+												<li><input type="checkbox" id="check">
+													<label for="" class="fs-6">
+														<?php echo $row['name']; ?>
+													</label>
+												</li>
+												<?php
+											}
+											?>
+
+										</ul>
+									</div>
 								</div>
-							</div>
-							<div class="filter">
-								<h5>Brand</h5>
-								<div class="checkbox" id="check">
-									<ul>
-										<li><input type="checkbox" id="check">
-											<label for="" class="fs-6">Brand 1</label>
-										</li>
-										<li><input type="checkbox" id="check">
-											<label for="" class="fs-6">Brand 2</label>
-										</li>
-										<li><input type="checkbox" id="check">
-											<label for="" class="fs-6">Brand 3</label>
-										</li>
-									</ul>
+								<?php
+									}
+									?>
+							<!--php code start for category-->
+							<?php
+							include "config.php";
+
+							$sql = "SELECT product.id , product.name FROM product";
+
+							$result = mysqli_query($conn, $sql);
+
+							if (mysqli_num_rows($result) > 0) {
+
+								?>
+								<div class="filter">
+									<h5>Brand</h5>
+									<div class="checkbox" id="check">
+										<ul>
+											<?php
+											while ($row = mysqli_fetch_assoc($result)) {
+												?>
+												<li><input type="checkbox" id="check">
+													<label for="" class="fs-6"></label>
+												</li>
+												<?php
+											}
+											?>
+										</ul>
+									</div>
 								</div>
-							</div>
+								<?php
+							}
+							?>
+
 							<div class="filter">
 								<h5>Price</h5>
 								<div class="checkbox" id="check">
@@ -223,7 +275,6 @@
 										<li><input type="checkbox" id="check">
 											<label for="" class="fs-6"> Rs. 79 to Rs. 10935</label>
 										</li>
-
 									</ul>
 								</div>
 							</div>
@@ -248,19 +299,20 @@
 								?>
 								<div class="col-md-3">
 									<div class="card">
-											<img src="../../Dashboard/template/pages/upload/<?php echo $row['image'];?>" class="#" alt="demo" height="200px" width="auto">
+										<img src="../../Dashboard/template/pages/upload/<?php echo $row['image']; ?>" class="#" alt="demo"
+											height="200px" width="auto">
 										<div class="card-body">
-										
+
 											<!-- <p class="d-flex justify-content-end mb-2">+3more</p> -->
 											<h6 class="mb-1 text-muted">
-												<?php echo $row['name'];?>
+												<?php echo $row['name']; ?>
 											</h6>
 											<p class="text-muted"><i class="fa fa-indian-rupee-sign"></i>
-												<?php echo $row['price'];?>
+												<?php echo $row['price']; ?>
 												<small class="fw-bold fs-5 mb-1"><i class="fa fa-indian-rupee-sign fs-5"></i>
-													<?php echo $row['sprice'] ?> 
+													<?php echo $row['sprice'] ?>
 												</small>
-											</small>
+												</small>
 											<p class="mb-1">free delivery</p>
 											<p class="rating">4.0 <i class="fa-sharp fa-solid fa-star"></i></p>
 										</div>

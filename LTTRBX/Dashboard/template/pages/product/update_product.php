@@ -306,99 +306,54 @@
           <div class="col-md-6">
             <div class="card" id="add-menu-form">
               <div class="card-body">
-                <h4 class="card-title">Add product</h4>
-                <form action="insert_product.php" method="POST" enctype="multipart/form-data">
-                  <div class="form-group">
-                    <label for="image" class="form-label">image</label>
-                    <input type="file" class="form-control" id="#" name="pimg">
+                <h4 class="card-title">update product</h4>
+                <?php
+        include "../config.php";
+         
+        $id =$_GET['id'];
+
+        $sql = "SELECT *  FROM product";
+        
+        $result = mysqli_query($conn,$sql) or die("query failed.");
+            if(mysqli_num_rows($result) > 0){
+                while($row = mysqli_fetch_assoc($result)){
+
+        ?>
+                <form action="update_product_update.php" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <input type="file" name="new-image">
+                  <img src="Dashboard/template/pages/upload/<?php echo $row['image']; ?>" class="img-fluid">
+                    <input type="hidden" name="old-image" value="<?php echo $row['image']; ?>">
                   </div>
                   <div class="form-group">
                     <label for="Name" class="form-label">Name</label>
-                    <input type="taxt" class="form-control" id="#" Name="Pname">
+                    <input type="taxt" class="form-control" id="#" Name="Pname" value="<?php echo $row['name'];?>">
                   </div>
                   <div class="form-group">
                     <label for="price" class="form-label">Price</label>
-                    <input type="number" class="form-control" id="#" Name="Price">
+                    <input type="number" class="form-control" id="#" Name="Price" value="<?php echo $row['price'];?>">
                   </div>
                   <div class="form-group">
                     <label for="sprice" class="form-label">special Price</label>
-                    <input type="number" class="form-control" id="#" Name="sPrice">
+                    <input type="number" class="form-control" id="#" Name="sPrice" value="<?php echo $row['sprice'];?>">
                   </div>
                   <div class="form-group">
                     <label for="Description" class="form-label">Description</label>
-                    <input type="taxt" class="form-control" id="#" Name="Description">
+                    <input type="taxt" class="form-control" id="#" Name="Description" value="<?php echo $row['description'];?>">
                   </div>
-                  <button type="submit" id="submit" class="btn btn-primary mr-2">Add</button>
+                  <button type="submit" id="submit" class="btn btn-primary mr-2">update</button>
                 </form>
+                <?php
+                }
+              }
+                ?>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- show menu Table  -->
-        <div class="card mt-5">
-          <div class="card-body">
-            <div class="table-responsive mt-5 mb-5">
-              <!--php code start-->
-              <?php
-              include "../config.php";
-
-              $sql = "SELECT * FROM product";
-
-              $result = mysqli_query($conn, $sql);
-
-              if (mysqli_num_rows($result) > 0) {
-                ?>
-                <table class="table table-striped">
-                  <thead>
-                    <tr>
-                      <th>Id</th>
-                      <th>Image</th>
-                      <th>Name</th>
-                      <th>Price</th>
-                      <th>Special price</th>
-                      <th>Description</th>
-                      <th>Action</th>
-                    </tr>
-                  </thead>
-                  <tbody id="#">
-                    <?php
-                    while ($row = mysqli_fetch_assoc($result)) {
-                      ?>
-                      <tr>
-                        <td>
-                          <?php echo $row['id']; ?>
-                        </td>
-                        <td><?php echo $row['image'];?></td>
-                        <td>
-                          <?php echo $row['name']; ?>
-                        </td>
-                        <td>
-                          <?php echo $row['price']; ?>
-                        </td>
-                        <td>
-                          <?php echo $row['sprice']; ?>
-                        </td>
-                        <td>
-                          <?php echo $row['description']; ?>
-                        </td>
-                        <td>
-                          <a href="update_product.php?id=<?php echo $row['id'];?>"class="fs-5 text-success"><i class="fa fa-pen-to-square"></i></a>
-                          <a href="delete_product.php?id=<?php echo $row['id'];?>"class="fs-5 text-danger"><i class="fa fa-trash"></i></a>
-                        </td>
-                      </tr>
-                      <?php
-                    }
-                    ?>
-                  </tbody>
-                </table>
-                <?php
-              }
-              ?>
+    
             </div>
-          </div>
-        </div>
-      </div>
 
 
       <!-- plugins:js -->
