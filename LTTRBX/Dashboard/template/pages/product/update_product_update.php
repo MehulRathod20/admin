@@ -32,11 +32,16 @@ if(empty($_FILES['new-image']['name'])){
 
 }
 
- $sql ="UPDATE `product` SET `image`='{.$file_name}',`name`='{$name}',`price`='{$price}',`sprice`='{$sprice}',`description`='{$description}' WHERE  id = {$_POST["id"]}";
+$name = mysqli_real_escape_string($conn,$_POST['Pname']);
+$price = mysqli_real_escape_string($conn,$_POST['Price']);
+$sprice = mysqli_real_escape_string($conn,$_POST['sPrice']);
+$description = mysqli_real_escape_string($conn,$_POST['Description']);
+
+ $sql ="UPDATE `product` SET `image`='{$file_name}',`name`='{$name}',`price`='{$price}',`sprice`='{$sprice}',`description`='{$description}' WHERE  id = {$_POST["id"]}";
  
  $result=mysqli_query($conn,$sql);
  if($result){
-   header("Location:http://localhost/project/LTTRBX/Dashboard/template/pages/offer/offer.php");
+   header("Location:http://localhost/project/LTTRBX/Dashboard/template/pages/product/product.php");
  }else{
   echo "query failed";
  }

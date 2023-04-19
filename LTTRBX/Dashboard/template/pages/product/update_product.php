@@ -312,7 +312,7 @@
          
         $id =$_GET['id'];
 
-        $sql = "SELECT *  FROM product";
+        $sql = "SELECT *  FROM product WHERE id = {$id} ";
         
         $result = mysqli_query($conn,$sql) or die("query failed.");
             if(mysqli_num_rows($result) > 0){
@@ -321,6 +321,7 @@
         ?>
                 <form action="update_product_update.php" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
+                <input type="hidden" name="id"  class="form-control" value="<?php echo $row['id'];?>" placeholder="">
                     <input type="file" name="new-image">
                   <img src="Dashboard/template/pages/upload/<?php echo $row['image']; ?>" class="img-fluid">
                     <input type="hidden" name="old-image" value="<?php echo $row['image']; ?>">
