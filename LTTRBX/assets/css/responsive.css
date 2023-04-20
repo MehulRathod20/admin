@@ -1,0 +1,32 @@
+@media (min-width: 375px){
+  .img-top {
+    width: 330px;
+    height: 250px;
+}
+.navbar-nav .nav-item:hover {
+  border-bottom: 2px solid var(--lb-main-color);
+  transition: 0.2s;
+  width: 50px;
+}
+}
+@media (min-width: 768px){
+  .img-top {
+    width: 316px;
+    height: 250px;
+}
+.navbar-nav .nav-item:hover {
+    border-bottom: 2px solid var(--lb-main-color);
+    transition: 0.2s;
+    width: 50px;
+}
+}
+
+@media (min-width: 992px) { ... }
+
+@media (min-width: 1280px) {
+  
+} 
+  
+@media (min-width: 1400px) {
+
+}

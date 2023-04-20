@@ -17,48 +17,7 @@
 </head>
 
 <body>
-	<!--info section start-->
-
-	<!--php code for header info-->
-	<?php
-	include "config.php";
-
-	$sql = "SELECT * FROM header_info";
-
-	$result = mysqli_query($conn, $sql);
-
-	if (mysqli_num_rows($result)) {
-
-		while ($row = mysqli_fetch_assoc($result)) {
-			?>
-			<section class="nav-section">
-				<div class="container">
-					<div class="row">
-						<div class="d-flex justify-content-between">
-							<div class="nav-phone">
-								<small><i class="fa fa-phone"></i>
-									<?php echo $row['phone']; ?>
-								</small>
-							</div>
-							<div>
-								<small>
-									<?php echo $row['header_text']; ?><span class="ms-3">|
-										<?php echo $row['header_text_2']; ?>
-									</span>
-								</small>
-							</div>
-							<div>
-								<small>eng <i class="fa fa-light fa-chevron-down"></i></small>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<?php
-		}
-	}
-	?>
-
+	
 	<!--navabr section-->
 	<section class="navbar-section">
 		<div class="container">
@@ -96,10 +55,7 @@
 							<?php
 						}
 						?>
-						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-							aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
+						
 						<div class="collapse navbar-collapse" id="navbarScroll">
 
 							<!--start php code for headermenu-->
